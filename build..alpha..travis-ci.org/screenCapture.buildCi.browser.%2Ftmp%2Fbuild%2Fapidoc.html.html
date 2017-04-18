@@ -1,0 +1,359 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/mgechev/codelyzer#readme">codelyzer (v2.1.1)</a>
+</h1>
+<h4>Linting for Angular applications, following angular.io/styleguide.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer">module codelyzer</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>function</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>logger</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>metadata</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.function">module codelyzer.function</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.function.Maybe">
+            function <span class="apidocSignatureSpan">codelyzer.function.</span>Maybe
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.function.all">
+            function <span class="apidocSignatureSpan">codelyzer.function.</span>all
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.function.any">
+            function <span class="apidocSignatureSpan">codelyzer.function.</span>any
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.function.ifTrue">
+            function <span class="apidocSignatureSpan">codelyzer.function.</span>ifTrue
+            <span class="apidocSignatureSpan">(pred)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.function.listToMaybe">
+            function <span class="apidocSignatureSpan">codelyzer.function.</span>listToMaybe
+            <span class="apidocSignatureSpan">(ms)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.function.unwrapFirst">
+            function <span class="apidocSignatureSpan">codelyzer.function.</span>unwrapFirst
+            <span class="apidocSignatureSpan">(ts)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.logger">module codelyzer.logger</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.logger.Logger">
+            function <span class="apidocSignatureSpan">codelyzer.logger.</span>Logger
+            <span class="apidocSignatureSpan">(level)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>logger</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.metadata">module codelyzer.metadata</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.metadata.ComponentMetadata">
+            function <span class="apidocSignatureSpan">codelyzer.metadata.</span>ComponentMetadata
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.metadata.DirectiveMetadata">
+            function <span class="apidocSignatureSpan">codelyzer.metadata.</span>DirectiveMetadata
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.codelyzer" id="apidoc.module.codelyzer">module codelyzer</a></h1>
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.codelyzer.function" id="apidoc.module.codelyzer.function">module codelyzer.function</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.function.Maybe" id="apidoc.element.codelyzer.function.Maybe">
+        function <span class="apidocSignatureSpan">codelyzer.function.</span>Maybe
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Maybe(t) {
+    this.t = t;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.function.all" id="apidoc.element.codelyzer.function.all">
+        function <span class="apidocSignatureSpan">codelyzer.function.</span>all
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function all() {
+    var preds = [];
+    for (var _i = 0; _i &lt; arguments.length; _i++) {
+        preds[_i] = arguments[_i];
+    }
+    return function (t) { return !preds.find(function (p) { return !p(t); }); };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.function.any" id="apidoc.element.codelyzer.function.any">
+        function <span class="apidocSignatureSpan">codelyzer.function.</span>any
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function any() {
+    var preds = [];
+    for (var _i = 0; _i &lt; arguments.length; _i++) {
+        preds[_i] = arguments[_i];
+    }
+    return function (t) { return !!preds.find(function (p) { return p(t); }); };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.function.ifTrue" id="apidoc.element.codelyzer.function.ifTrue">
+        function <span class="apidocSignatureSpan">codelyzer.function.</span>ifTrue
+        <span class="apidocSignatureSpan">(pred)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ifTrue(pred) {
+    return function (t) { return (pred(t)) ? Maybe.lift(t) : Maybe.nothing; };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.function.listToMaybe" id="apidoc.element.codelyzer.function.listToMaybe">
+        function <span class="apidocSignatureSpan">codelyzer.function.</span>listToMaybe
+        <span class="apidocSignatureSpan">(ms)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function listToMaybe(ms) {
+    var unWrapped = ms.filter(function (m) { return m.isSomething; }).map(function (m) { return m.unwrap(); });
+    return unWrapped.length !== 0 ? Maybe.lift(unWrapped) : Maybe.nothing;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.function.unwrapFirst" id="apidoc.element.codelyzer.function.unwrapFirst">
+        function <span class="apidocSignatureSpan">codelyzer.function.</span>unwrapFirst
+        <span class="apidocSignatureSpan">(ts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function unwrapFirst(ts) {
+    var f = ts.find(function (t) { return t.isSomething; });
+    if (!!f) {
+        return f.unwrap();
+    }
+    return undefined;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.codelyzer.logger" id="apidoc.module.codelyzer.logger">module codelyzer.logger</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.logger.Logger" id="apidoc.element.codelyzer.logger.Logger">
+        function <span class="apidocSignatureSpan">codelyzer.logger.</span>Logger
+        <span class="apidocSignatureSpan">(level)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Logger(level) {
+    this.level = level;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.codelyzer.metadata" id="apidoc.module.codelyzer.metadata">module codelyzer.metadata</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.metadata.ComponentMetadata" id="apidoc.element.codelyzer.metadata.ComponentMetadata">
+        function <span class="apidocSignatureSpan">codelyzer.metadata.</span>ComponentMetadata
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ComponentMetadata() {
+    return _super.apply(this, arguments) || this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.metadata.DirectiveMetadata" id="apidoc.element.codelyzer.metadata.DirectiveMetadata">
+        function <span class="apidocSignatureSpan">codelyzer.metadata.</span>DirectiveMetadata
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DirectiveMetadata() {
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
