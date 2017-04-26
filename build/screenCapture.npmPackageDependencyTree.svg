@@ -6,7 +6,7 @@
 <tspan x="10" y="58">node_modules</tspan>
 <tspan x="10" y="74">├── UNMET PEER DEPENDENCY @angular/compiler@^2.3.1 || &gt;=4.0.0-beta &lt;5.0.0</tspan>
 <tspan x="10" y="90">├── UNMET PEER DEPENDENCY @angular/core@^2.3.1 || &gt;=4.0.0-beta &lt;5.0.0</tspan>
-<tspan x="10" y="106">├─┬ codelyzer@2.1.1 </tspan>
+<tspan x="10" y="106">├─┬ codelyzer@3.0.0 </tspan>
 <tspan x="10" y="122">│ ├── app-root-path@2.0.1 </tspan>
 <tspan x="10" y="138">│ ├─┬ css-selector-tokenizer@0.7.0 </tspan>
 <tspan x="10" y="154">│ │ ├── cssesc@0.1.0 </tspan>
@@ -22,6 +22,6 @@
 <tspan x="10" y="314">│ │ └── semver@5.3.0 </tspan>
 <tspan x="10" y="330">│ ├── source-map@0.5.6 </tspan>
 <tspan x="10" y="346">│ └── sprintf-js@1.0.3 </tspan>
-<tspan x="10" y="362">└── UNMET PEER DEPENDENCY tslint@^4.0.0</tspan>
+<tspan x="10" y="362">└── UNMET PEER DEPENDENCY tslint@^5.0.0</tspan>
 </text>
 </svg>

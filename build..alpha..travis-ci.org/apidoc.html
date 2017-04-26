@@ -51,7 +51,7 @@
 
         href="https://github.com/mgechev/codelyzer#readme"
 
-    >codelyzer (v2.1.1)</a>
+    >codelyzer (v3.0.0)</a>
 </h1>
 <h4>Linting for Angular applications, following angular.io/styleguide.</h4>
 <div class="apidocSectionDiv"><a
@@ -63,25 +63,43 @@
 
         <li>
 
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>astQuery</span>
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>chars</span>
 
         </li>
 
         <li>
 
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>classDeclarationUtils</span>
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>cssAst</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>cssLexer</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>cssParser</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>fileResolver</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>fsFileResolver</span>
 
         </li>
 
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>function</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>importDestructuringSpacingRule</span>
 
         </li>
 
@@ -99,251 +117,432 @@
 
         <li>
 
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>metadataReader</span>
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>parseCss</span>
 
         </li>
 
         <li>
 
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>ngQuery</span>
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>parseUtil</span>
 
         </li>
 
         <li>
 
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>noForwardRefRule</span>
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>pathResolver</span>
 
         </li>
 
         <li>
 
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>propertyDecoratorBase</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>sourceMappingVisitor</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>syntaxKind</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>useHostPropertyDecoratorRule</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>useInputPropertyDecoratorRule</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>useLifeCycleInterfaceRule</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>useOutputPropertyDecoratorRule</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>usePipeTransformInterfaceRule</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>utils</span>
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.</span>referenceCollectorVisitor</span>
 
         </li>
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.astQuery">module codelyzer.astQuery</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.chars">module codelyzer.chars</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.astQuery.callExpression">
-            function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>callExpression
-            <span class="apidocSignatureSpan">(dec)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.chars.isAsciiHexDigit">
+            function <span class="apidocSignatureSpan">codelyzer.chars.</span>isAsciiHexDigit
+            <span class="apidocSignatureSpan">(code)</span>
             </a>
 
         </li>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.astQuery.decoratorArgument">
-            function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>decoratorArgument
-            <span class="apidocSignatureSpan">(dec)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.chars.isAsciiLetter">
+            function <span class="apidocSignatureSpan">codelyzer.chars.</span>isAsciiLetter
+            <span class="apidocSignatureSpan">(code)</span>
             </a>
 
         </li>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.astQuery.getInitializer">
-            function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>getInitializer
-            <span class="apidocSignatureSpan">(p)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.chars.isDigit">
+            function <span class="apidocSignatureSpan">codelyzer.chars.</span>isDigit
+            <span class="apidocSignatureSpan">(code)</span>
             </a>
 
         </li>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.astQuery.getStringInitializerFromProperty">
-            function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>getStringInitializerFromProperty
-            <span class="apidocSignatureSpan">(propertyName, ps)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.astQuery.hasProperties">
-            function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>hasProperties
-            <span class="apidocSignatureSpan">(expr)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.astQuery.isArrayLiteralExpression">
-            function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>isArrayLiteralExpression
-            <span class="apidocSignatureSpan">(expr)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.astQuery.isCallExpression">
-            function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>isCallExpression
-            <span class="apidocSignatureSpan">(expr)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.astQuery.isDecorator">
-            function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>isDecorator
-            <span class="apidocSignatureSpan">(expr)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.astQuery.isIdentifier">
-            function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>isIdentifier
-            <span class="apidocSignatureSpan">(expr)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.astQuery.isObjectLiteralExpression">
-            function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>isObjectLiteralExpression
-            <span class="apidocSignatureSpan">(expr)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.astQuery.isProperty">
-            function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>isProperty
-            <span class="apidocSignatureSpan">(propName, p)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.astQuery.isPropertyAssignment">
-            function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>isPropertyAssignment
-            <span class="apidocSignatureSpan">(expr)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.astQuery.isSimpleTemplateString">
-            function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>isSimpleTemplateString
-            <span class="apidocSignatureSpan">(expr)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.astQuery.objectLiteralExpression">
-            function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>objectLiteralExpression
-            <span class="apidocSignatureSpan">(expr)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.astQuery.withIdentifier">
-            function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>withIdentifier
-            <span class="apidocSignatureSpan">(identifier)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.chars.isWhitespace">
+            function <span class="apidocSignatureSpan">codelyzer.chars.</span>isWhitespace
+            <span class="apidocSignatureSpan">(code)</span>
             </a>
 
         </li>
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.classDeclarationUtils">module codelyzer.classDeclarationUtils</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.cssAst">module codelyzer.cssAst</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.classDeclarationUtils.getDeclaredMethodNames">
-            function <span class="apidocSignatureSpan">codelyzer.classDeclarationUtils.</span>getDeclaredMethodNames
-            <span class="apidocSignatureSpan">(declaration)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssAst.CssAst">
+            function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssAst
+            <span class="apidocSignatureSpan">(location)</span>
             </a>
 
         </li>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.classDeclarationUtils.getDeclaredMethods">
-            function <span class="apidocSignatureSpan">codelyzer.classDeclarationUtils.</span>getDeclaredMethods
-            <span class="apidocSignatureSpan">(declaration)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssAst.CssAtRulePredicateAst">
+            function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssAtRulePredicateAst
+            <span class="apidocSignatureSpan">(location, strValue, tokens)</span>
             </a>
 
         </li>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.classDeclarationUtils.getDeclaredProperties">
-            function <span class="apidocSignatureSpan">codelyzer.classDeclarationUtils.</span>getDeclaredProperties
-            <span class="apidocSignatureSpan">(declaration)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssAst.CssBlockAst">
+            function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssBlockAst
+            <span class="apidocSignatureSpan">(location, entries)</span>
             </a>
 
         </li>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.classDeclarationUtils.getDeclaredPropertyNames">
-            function <span class="apidocSignatureSpan">codelyzer.classDeclarationUtils.</span>getDeclaredPropertyNames
-            <span class="apidocSignatureSpan">(declaration)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssAst.CssBlockDefinitionRuleAst">
+            function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssBlockDefinitionRuleAst
+            <span class="apidocSignatureSpan">(location, strValue, type, query, block)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssAst.CssBlockRuleAst">
+            function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssBlockRuleAst
+            <span class="apidocSignatureSpan">(location, type, block, name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssAst.CssDefinitionAst">
+            function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssDefinitionAst
+            <span class="apidocSignatureSpan">(location, property, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssAst.CssInlineRuleAst">
+            function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssInlineRuleAst
+            <span class="apidocSignatureSpan">(location, type, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssAst.CssKeyframeDefinitionAst">
+            function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssKeyframeDefinitionAst
+            <span class="apidocSignatureSpan">(location, steps, block)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssAst.CssKeyframeRuleAst">
+            function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssKeyframeRuleAst
+            <span class="apidocSignatureSpan">(location, name, block)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssAst.CssMediaQueryRuleAst">
+            function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssMediaQueryRuleAst
+            <span class="apidocSignatureSpan">(location, strValue, query, block)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssAst.CssPseudoSelectorAst">
+            function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssPseudoSelectorAst
+            <span class="apidocSignatureSpan">(location, strValue, name, tokens, innerSelectors)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssAst.CssRuleAst">
+            function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssRuleAst
+            <span class="apidocSignatureSpan">(location)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssAst.CssSelectorAst">
+            function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssSelectorAst
+            <span class="apidocSignatureSpan">(location, selectorParts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssAst.CssSelectorPartAst">
+            function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssSelectorPartAst
+            <span class="apidocSignatureSpan">(location)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssAst.CssSelectorRuleAst">
+            function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssSelectorRuleAst
+            <span class="apidocSignatureSpan">(location, selectors, block)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssAst.CssSimpleSelectorAst">
+            function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssSimpleSelectorAst
+            <span class="apidocSignatureSpan">(location, tokens, strValue, pseudoSelectors, operator)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssAst.CssStyleSheetAst">
+            function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssStyleSheetAst
+            <span class="apidocSignatureSpan">(location, rules)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssAst.CssStyleValueAst">
+            function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssStyleValueAst
+            <span class="apidocSignatureSpan">(location, tokens, strValue)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssAst.CssStylesBlockAst">
+            function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssStylesBlockAst
+            <span class="apidocSignatureSpan">(location, definitions)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssAst.CssUnknownRuleAst">
+            function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssUnknownRuleAst
+            <span class="apidocSignatureSpan">(location, ruleName, tokens)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssAst.CssUnknownTokenListAst">
+            function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssUnknownTokenListAst
+            <span class="apidocSignatureSpan">(location, name, tokens)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssAst.mergeTokens">
+            function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>mergeTokens
+            <span class="apidocSignatureSpan">(tokens, separator)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.cssAst.</span>BlockType</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.cssLexer">module codelyzer.cssLexer</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssLexer.CssLexer">
+            function <span class="apidocSignatureSpan">codelyzer.cssLexer.</span>CssLexer
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssLexer.CssScanner">
+            function <span class="apidocSignatureSpan">codelyzer.cssLexer.</span>CssScanner
+            <span class="apidocSignatureSpan">(input, _trackComments)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssLexer.CssScannerError">
+            function <span class="apidocSignatureSpan">codelyzer.cssLexer.</span>CssScannerError
+            <span class="apidocSignatureSpan">(token, message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssLexer.CssToken">
+            function <span class="apidocSignatureSpan">codelyzer.cssLexer.</span>CssToken
+            <span class="apidocSignatureSpan">(index, column, line, type, strValue)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssLexer.LexedCssResult">
+            function <span class="apidocSignatureSpan">codelyzer.cssLexer.</span>LexedCssResult
+            <span class="apidocSignatureSpan">(error, token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssLexer.findProblemCode">
+            function <span class="apidocSignatureSpan">codelyzer.cssLexer.</span>findProblemCode
+            <span class="apidocSignatureSpan">(input, errorValue, index, column)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssLexer.generateErrorMessage">
+            function <span class="apidocSignatureSpan">codelyzer.cssLexer.</span>generateErrorMessage
+            <span class="apidocSignatureSpan">(input, message, errorValue, index, row, column)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssLexer.isNewline">
+            function <span class="apidocSignatureSpan">codelyzer.cssLexer.</span>isNewline
+            <span class="apidocSignatureSpan">(code)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.cssLexer.</span>CssLexerMode</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.cssLexer.</span>CssTokenType</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.cssParser">module codelyzer.cssParser</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssParser.CssParseError">
+            function <span class="apidocSignatureSpan">codelyzer.cssParser.</span>CssParseError
+            <span class="apidocSignatureSpan">(span, message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssParser.CssParser">
+            function <span class="apidocSignatureSpan">codelyzer.cssParser.</span>CssParser
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssParser.CssToken">
+            function <span class="apidocSignatureSpan">codelyzer.cssParser.</span>CssToken
+            <span class="apidocSignatureSpan">(index, column, line, type, strValue)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.cssParser.ParsedCssResult">
+            function <span class="apidocSignatureSpan">codelyzer.cssParser.</span>ParsedCssResult
+            <span class="apidocSignatureSpan">(errors, ast)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.cssParser.</span>BlockType</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.fileResolver">module codelyzer.fileResolver</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.fileResolver.FileResolver">
+            function <span class="apidocSignatureSpan">codelyzer.fileResolver.</span>FileResolver
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.fsFileResolver">module codelyzer.fsFileResolver</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.fsFileResolver.FsFileResolver">
+            function <span class="apidocSignatureSpan">codelyzer.fsFileResolver.</span>FsFileResolver
+            <span class="apidocSignatureSpan">()</span>
             </a>
 
         </li>
@@ -408,19 +607,6 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.importDestructuringSpacingRule">module codelyzer.importDestructuringSpacingRule</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.importDestructuringSpacingRule.Rule">
-            function <span class="apidocSignatureSpan">codelyzer.importDestructuringSpacingRule.</span>Rule
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
     <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.logger">module codelyzer.logger</a><ol>
 
         <li>
@@ -462,113 +648,71 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.metadataReader">module codelyzer.metadataReader</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.parseCss">module codelyzer.parseCss</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.metadataReader.MetadataReader">
-            function <span class="apidocSignatureSpan">codelyzer.metadataReader.</span>MetadataReader
-            <span class="apidocSignatureSpan">(_fileResolver, _urlResolver)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.parseCss.parseCss">
+            function <span class="apidocSignatureSpan">codelyzer.</span>parseCss
+            <span class="apidocSignatureSpan">(text)</span>
             </a>
 
         </li>
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.ngQuery">module codelyzer.ngQuery</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.parseUtil">module codelyzer.parseUtil</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.ngQuery.getInlineStyle">
-            function <span class="apidocSignatureSpan">codelyzer.ngQuery.</span>getInlineStyle
-            <span class="apidocSignatureSpan">(dec)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.parseUtil.ParseError">
+            function <span class="apidocSignatureSpan">codelyzer.parseUtil.</span>ParseError
+            <span class="apidocSignatureSpan">(span, msg, level)</span>
             </a>
 
         </li>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.ngQuery.getTemplate">
-            function <span class="apidocSignatureSpan">codelyzer.ngQuery.</span>getTemplate
-            <span class="apidocSignatureSpan">(dec)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.parseUtil.ParseLocation">
+            function <span class="apidocSignatureSpan">codelyzer.parseUtil.</span>ParseLocation
+            <span class="apidocSignatureSpan">(file, offset, line, col)</span>
             </a>
 
         </li>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.ngQuery.getTemplateUrl">
-            function <span class="apidocSignatureSpan">codelyzer.ngQuery.</span>getTemplateUrl
-            <span class="apidocSignatureSpan">(dec)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.noForwardRefRule">module codelyzer.noForwardRefRule</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.noForwardRefRule.ExpressionCallMetadataWalker">
-            function <span class="apidocSignatureSpan">codelyzer.noForwardRefRule.</span>ExpressionCallMetadataWalker
-            <span class="apidocSignatureSpan">()</span>
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.parseUtil.ParseSourceFile">
+            function <span class="apidocSignatureSpan">codelyzer.parseUtil.</span>ParseSourceFile
+            <span class="apidocSignatureSpan">(content, url)</span>
             </a>
 
         </li>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.noForwardRefRule.Rule">
-            function <span class="apidocSignatureSpan">codelyzer.noForwardRefRule.</span>Rule
-            <span class="apidocSignatureSpan">()</span>
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.parseUtil.ParseSourceSpan">
+            function <span class="apidocSignatureSpan">codelyzer.parseUtil.</span>ParseSourceSpan
+            <span class="apidocSignatureSpan">(start, end, details)</span>
             </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">codelyzer.parseUtil.</span>ParseErrorLevel</span>
 
         </li>
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.propertyDecoratorBase">module codelyzer.propertyDecoratorBase</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.pathResolver">module codelyzer.pathResolver</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.propertyDecoratorBase.UsePropertyDecorator">
-            function <span class="apidocSignatureSpan">codelyzer.propertyDecoratorBase.</span>UsePropertyDecorator
-            <span class="apidocSignatureSpan">(config, ruleName, value, disabledIntervals)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.sourceMappingVisitor">module codelyzer.sourceMappingVisitor</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.sourceMappingVisitor.SourceMappingVisitor">
-            function <span class="apidocSignatureSpan">codelyzer.sourceMappingVisitor.</span>SourceMappingVisitor
-            <span class="apidocSignatureSpan">(sourceFile, options, codeWithMap, basePosition)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.sourceMappingVisitor.isLineBreak">
-            function <span class="apidocSignatureSpan">codelyzer.sourceMappingVisitor.</span>isLineBreak
-            <span class="apidocSignatureSpan">(ch)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.syntaxKind">module codelyzer.syntaxKind</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.syntaxKind.current">
-            function <span class="apidocSignatureSpan">codelyzer.syntaxKind.</span>current
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.pathResolver.PathResolver">
+            function <span class="apidocSignatureSpan">codelyzer.pathResolver.</span>PathResolver
             <span class="apidocSignatureSpan">()</span>
             </a>
 
@@ -576,132 +720,13 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.useHostPropertyDecoratorRule">module codelyzer.useHostPropertyDecoratorRule</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.referenceCollectorVisitor">module codelyzer.referenceCollectorVisitor</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.useHostPropertyDecoratorRule.Rule">
-            function <span class="apidocSignatureSpan">codelyzer.useHostPropertyDecoratorRule.</span>Rule
-            <span class="apidocSignatureSpan">(ruleName, value, disabledIntervals)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.useInputPropertyDecoratorRule">module codelyzer.useInputPropertyDecoratorRule</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.useInputPropertyDecoratorRule.Rule">
-            function <span class="apidocSignatureSpan">codelyzer.useInputPropertyDecoratorRule.</span>Rule
-            <span class="apidocSignatureSpan">(ruleName, value, disabledIntervals)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.useLifeCycleInterfaceRule">module codelyzer.useLifeCycleInterfaceRule</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.useLifeCycleInterfaceRule.ClassMetadataWalker">
-            function <span class="apidocSignatureSpan">codelyzer.useLifeCycleInterfaceRule.</span>ClassMetadataWalker
+            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.referenceCollectorVisitor.ReferenceCollectorVisitor">
+            function <span class="apidocSignatureSpan">codelyzer.referenceCollectorVisitor.</span>ReferenceCollectorVisitor
             <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.useLifeCycleInterfaceRule.Rule">
-            function <span class="apidocSignatureSpan">codelyzer.useLifeCycleInterfaceRule.</span>Rule
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.useOutputPropertyDecoratorRule">module codelyzer.useOutputPropertyDecoratorRule</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.useOutputPropertyDecoratorRule.Rule">
-            function <span class="apidocSignatureSpan">codelyzer.useOutputPropertyDecoratorRule.</span>Rule
-            <span class="apidocSignatureSpan">(ruleName, value, disabledIntervals)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.usePipeTransformInterfaceRule">module codelyzer.usePipeTransformInterfaceRule</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.usePipeTransformInterfaceRule.ClassMetadataWalker">
-            function <span class="apidocSignatureSpan">codelyzer.usePipeTransformInterfaceRule.</span>ClassMetadataWalker
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.usePipeTransformInterfaceRule.Rule">
-            function <span class="apidocSignatureSpan">codelyzer.usePipeTransformInterfaceRule.</span>Rule
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.codelyzer.utils">module codelyzer.utils</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.utils.getComponentDecorator">
-            function <span class="apidocSignatureSpan">codelyzer.utils.</span>getComponentDecorator
-            <span class="apidocSignatureSpan">(declaration)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.utils.getDecoratorName">
-            function <span class="apidocSignatureSpan">codelyzer.utils.</span>getDecoratorName
-            <span class="apidocSignatureSpan">(decorator)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.utils.getDecoratorPropertyInitializer">
-            function <span class="apidocSignatureSpan">codelyzer.utils.</span>getDecoratorPropertyInitializer
-            <span class="apidocSignatureSpan">(decorator, name)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.utils.isSimpleTemplateString">
-            function <span class="apidocSignatureSpan">codelyzer.utils.</span>isSimpleTemplateString
-            <span class="apidocSignatureSpan">(e)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.codelyzer.utils.stringDistance">
-            function <span class="apidocSignatureSpan">codelyzer.utils.</span>stringDistance
-            <span class="apidocSignatureSpan">(s, t, ls, lt)</span>
             </a>
 
         </li>
@@ -739,32 +764,21 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.codelyzer.astQuery" id="apidoc.module.codelyzer.astQuery">module codelyzer.astQuery</a></h1>
+<h1><a href="#apidoc.module.codelyzer.chars" id="apidoc.module.codelyzer.chars">module codelyzer.chars</a></h1>
 
 
     <h2>
-        <a href="#apidoc.element.codelyzer.astQuery.callExpression" id="apidoc.element.codelyzer.astQuery.callExpression">
-        function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>callExpression
-        <span class="apidocSignatureSpan">(dec)</span>
+        <a href="#apidoc.element.codelyzer.chars.isAsciiHexDigit" id="apidoc.element.codelyzer.chars.isAsciiHexDigit">
+        function <span class="apidocSignatureSpan">codelyzer.chars.</span>isAsciiHexDigit
+        <span class="apidocSignatureSpan">(code)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function callExpression(dec) {
-    return function_1.Maybe.lift(dec.expression)
-        .fmap(function (expr) { return isCallExpression(expr) ? expr : undefined; });
+    <li>description and source-code<pre class="apidocCodePre">function isAsciiHexDigit(code) {
+    return code &#x3e;= exports.$a &#x26;&#x26; code &#x3c;= exports.$f || code &#x3e;= exports.$A &#x26;&#x26; code &#x3c;= exports.$F || isDigit(code);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -772,434 +786,1190 @@
 
 
     <h2>
-        <a href="#apidoc.element.codelyzer.astQuery.decoratorArgument" id="apidoc.element.codelyzer.astQuery.decoratorArgument">
-        function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>decoratorArgument
-        <span class="apidocSignatureSpan">(dec)</span>
+        <a href="#apidoc.element.codelyzer.chars.isAsciiLetter" id="apidoc.element.codelyzer.chars.isAsciiLetter">
+        function <span class="apidocSignatureSpan">codelyzer.chars.</span>isAsciiLetter
+        <span class="apidocSignatureSpan">(code)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function decoratorArgument(dec) {
-    return function_1.Maybe.lift(dec)
-        .bind(callExpression)
-        .bind(objectLiteralExpression);
+    <li>description and source-code<pre class="apidocCodePre">function isAsciiLetter(code) {
+    return code &#x3e;= exports.$a &#x26;&#x26; code &#x3c;= exports.$z || code &#x3e;= exports.$A &#x26;&#x26; code &#x3c;= exports.$Z;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-    });
-    return Object.assign(new metadata_1.ComponentMetadata(), directiveMetadata, {
-        template: template_M.unwrap(),
-        styles: style_M.unwrap(),
-    });
-};
-MetadataReader.prototype.getDecoratorArgument = function (decorator) {
-    return astQuery_1.<span class="apidocCodeKeywordSpan">decoratorArgument</span>(decorator)
-        .bind(function_1.ifTrue(astQuery_1.hasProperties));
-};
-MetadataReader.prototype.readComponentTemplateMetadata = function (dec, external) {
-    var _this = this;
-    return ngQuery_1.getTemplate(dec)
-        .fmap(function (inlineTemplate) { return ({
-        template: normalizeTransformed(config_1.Config.transformTemplate(inlineTemplate.text, null, dec)),
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.astQuery.getInitializer" id="apidoc.element.codelyzer.astQuery.getInitializer">
-        function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>getInitializer
-        <span class="apidocSignatureSpan">(p)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function getInitializer(p) {
-    return function_1.Maybe.lift((isPropertyAssignment(p) &#x26;&#x26; isIdentifier(p.name)) ? p.initializer : undefined);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-&#x22;use strict&#x22;;
-var astQuery_1 = require(&#x22;./astQuery&#x22;);
-function getInlineStyle(dec) {
-    return astQuery_1.decoratorArgument(dec)
-        .bind(function (expr) {
-        var property = expr.properties.find(function (p) { return astQuery_1.isProperty(&#x27;styles&#x27;, p); });
-        return astQuery_1.<span class="apidocCodeKeywordSpan">getInitializer</span>(property)
-            .fmap(function (expr) {
-            return astQuery_1.isArrayLiteralExpression(expr) ? expr : undefined;
-        });
-    });
+    return target == chars.$DQ || target == chars.$SQ;
 }
-exports.getInlineStyle = getInlineStyle;
-function getTemplateUrl(dec) {
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.astQuery.getStringInitializerFromProperty" id="apidoc.element.codelyzer.astQuery.getStringInitializerFromProperty">
-        function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>getStringInitializerFromProperty
-        <span class="apidocSignatureSpan">(propertyName, ps)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function getStringInitializerFromProperty(propertyName, ps) {
-    var property = ps.find(function (p) { return isProperty(propertyName, p); });
-    return getInitializer(property)
-        .fmap(function (expr) { return isSimpleTemplateString(expr) ? expr : undefined; });
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-            .bind(astQuery_1.withIdentifier(&#x27;Directive&#x27;))
-            .fmap(function () { return _this.readDirectiveMetadata(d, dec); });
-    }));
-    return directiveMetadata || componentMetadata || undefined;
-};
-MetadataReader.prototype.readDirectiveMetadata = function (d, dec) {
-    var selector = this.getDecoratorArgument(dec)
-        .bind(function (expr) { return astQuery_1.<span class="apidocCodeKeywordSpan">getStringInitializerFromProperty</span>(&#
-x27;selector&#x27;, expr.properties); })
-        .fmap(function (initializer) { return initializer.text; });
-    return Object.assign(new metadata_1.DirectiveMetadata(), {
-        controller: d,
-        decorator: dec,
-        selector: selector.unwrap(),
-    });
-};
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.astQuery.hasProperties" id="apidoc.element.codelyzer.astQuery.hasProperties">
-        function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>hasProperties
-        <span class="apidocSignatureSpan">(expr)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function hasProperties(expr) {
-    return expr &#x26;&#x26; !!expr.properties;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.astQuery.isArrayLiteralExpression" id="apidoc.element.codelyzer.astQuery.isArrayLiteralExpression">
-        function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>isArrayLiteralExpression
-        <span class="apidocSignatureSpan">(expr)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function isArrayLiteralExpression(expr) {
-    return expr &#x26;&#x26; expr.kind === kinds.ArrayLiteralExpression;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-var astQuery_1 = require(&#x22;./astQuery&#x22;);
-function getInlineStyle(dec) {
-return astQuery_1.decoratorArgument(dec)
-    .bind(function (expr) {
-    var property = expr.properties.find(function (p) { return astQuery_1.isProperty(&#x27;styles&#x27;, p); });
-    return astQuery_1.getInitializer(property)
-        .fmap(function (expr) {
-        return astQuery_1.<span class="apidocCodeKeywordSpan">isArrayLiteralExpression</span>(expr) ? expr : undefined;
-    });
-});
-}
-exports.getInlineStyle = getInlineStyle;
-function getTemplateUrl(dec) {
-return astQuery_1.decoratorArgument(dec)
-    .bind(function (expr) {
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.astQuery.isCallExpression" id="apidoc.element.codelyzer.astQuery.isCallExpression">
-        function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>isCallExpression
-        <span class="apidocSignatureSpan">(expr)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function isCallExpression(expr) {
-    return expr &#x26;&#x26; expr.kind === kinds.CallExpression;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.astQuery.isDecorator" id="apidoc.element.codelyzer.astQuery.isDecorator">
-        function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>isDecorator
-        <span class="apidocSignatureSpan">(expr)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function isDecorator(expr) {
-    return expr &#x26;&#x26; expr.kind === kinds.Decorator;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.astQuery.isIdentifier" id="apidoc.element.codelyzer.astQuery.isIdentifier">
-        function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>isIdentifier
-        <span class="apidocSignatureSpan">(expr)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function isIdentifier(expr) {
-    return expr &#x26;&#x26; expr.kind === kinds.Identifier;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.astQuery.isObjectLiteralExpression" id="apidoc.element.codelyzer.astQuery.isObjectLiteralExpression">
-        function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>isObjectLiteralExpression
-        <span class="apidocSignatureSpan">(expr)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function isObjectLiteralExpression(expr) {
-    return expr &#x26;&#x26; expr.kind === kinds.ObjectLiteralExpression;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.astQuery.isProperty" id="apidoc.element.codelyzer.astQuery.isProperty">
-        function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>isProperty
-        <span class="apidocSignatureSpan">(propName, p)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function isProperty(propName, p) {
-    return isPropertyAssignment(p) &#x26;&#x26; isIdentifier(p.name) &#x26;&#x26; p.name.text === propName;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-
-&#x22;use strict&#x22;;
-var astQuery_1 = require(&#x22;./astQuery&#x22;);
-function getInlineStyle(dec) {
-    return astQuery_1.decoratorArgument(dec)
-        .bind(function (expr) {
-        var property = expr.properties.find(function (p) { return astQuery_1.<span class="apidocCodeKeywordSpan">isProperty</span
->(&#x27;styles&#x27;, p); });
-        return astQuery_1.getInitializer(property)
-            .fmap(function (expr) {
-            return astQuery_1.isArrayLiteralExpression(expr) ? expr : undefined;
-        });
-    });
-}
-exports.getInlineStyle = getInlineStyle;
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.astQuery.isPropertyAssignment" id="apidoc.element.codelyzer.astQuery.isPropertyAssignment">
-        function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>isPropertyAssignment
-        <span class="apidocSignatureSpan">(expr)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function isPropertyAssignment(expr) {
-    return expr &#x26;&#x26; expr.kind === kinds.PropertyAssignment;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.astQuery.isSimpleTemplateString" id="apidoc.element.codelyzer.astQuery.isSimpleTemplateString">
-        function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>isSimpleTemplateString
-        <span class="apidocSignatureSpan">(expr)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function isSimpleTemplateString(expr) {
-    return expr &#x26;&#x26; expr.kind === kinds.StringLiteral || expr.kind === kinds.NoSubstitutionTemplateLiteral;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-        });
-    });
-};
-MetadataReader.prototype.readComponentStylesMetadata = function (dec, external) {
-    var _this = this;
-    return ngQuery_1.getInlineStyle(dec).fmap(function (inlineStyles) {
-        return inlineStyles.elements.map(function (inlineStyle) {
-            if (astQuery_1.<span class="apidocCodeKeywordSpan">isSimpleTemplateString</span>(inlineStyle)) {
-                return {
-                    style: normalizeTransformed(config_1.Config.transformStyle(inlineStyle.text, null, dec)),
-                    url: null,
-                    node: inlineStyle,
-                };
-            }
-        }).filter(function (v) { return !!v; });
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.astQuery.objectLiteralExpression" id="apidoc.element.codelyzer.astQuery.objectLiteralExpression">
-        function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>objectLiteralExpression
-        <span class="apidocSignatureSpan">(expr)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function objectLiteralExpression(expr) {
-    return function_1.Maybe.lift(expr.arguments[0])
-        .fmap(function (arg0) { return (isObjectLiteralExpression(arg0) ? arg0 : undefined); });
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.astQuery.withIdentifier" id="apidoc.element.codelyzer.astQuery.withIdentifier">
-        function <span class="apidocSignatureSpan">codelyzer.astQuery.</span>withIdentifier
-        <span class="apidocSignatureSpan">(identifier)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function withIdentifier(identifier) {
-    return function_1.ifTrue(function (expr) { return (isIdentifier(expr.expression) &#x26;&#x26; expr.expression.text === identifier); });
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-    this._urlResolver = _urlResolver;
-    this._urlResolver = this._urlResolver || new urlResolver_1.UrlResolver(new pathResolver_1.PathResolver());
-}
-MetadataReader.prototype.read = function (d) {
-    var _this = this;
-    var componentMetadata = function_1.unwrapFirst((d.decorators || []).map(function (dec) {
-        return function_1.Maybe.lift(dec).bind(astQuery_1.callExpression)
-            .bind(astQuery_1.<span class="apidocCodeKeywordSpan">withIdentifier</span>(&#x27;Component&#x27;))
-            .fmap(function () { return _this.readComponentMetadata(d, dec); });
-    }));
-    var directiveMetadata = function_1.unwrapFirst((d.decorators || []).map(function (dec) {
-        return function_1.Maybe.lift(dec)
-            .bind(astQuery_1.callExpression)
-            .bind(astQuery_1.withIdentifier(&#x27;Directive&#x27;))
-            .fmap(function () { return _this.readDirectiveMetadata(d, dec); });
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.codelyzer.classDeclarationUtils" id="apidoc.module.codelyzer.classDeclarationUtils">module codelyzer.classDeclarationUtils</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.classDeclarationUtils.getDeclaredMethodNames" id="apidoc.element.codelyzer.classDeclarationUtils.getDeclaredMethodNames">
-        function <span class="apidocSignatureSpan">codelyzer.classDeclarationUtils.</span>getDeclaredMethodNames
-        <span class="apidocSignatureSpan">(declaration)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">getDeclaredMethodNames = function (declaration) {
-    return exports.getDeclaredMethods(declaration)
-        .map(function (d) { return d.name.text; });
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.classDeclarationUtils.getDeclaredMethods" id="apidoc.element.codelyzer.classDeclarationUtils.getDeclaredMethods">
-        function <span class="apidocSignatureSpan">codelyzer.classDeclarationUtils.</span>getDeclaredMethods
-        <span class="apidocSignatureSpan">(declaration)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">getDeclaredMethods = function (declaration) {
-    return declaration.members.filter(function (m) { return m.kind === SyntaxKind.MethodDeclaration; });
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-exports.getDeclaredPropertyNames = function (declaration) {
-    return exports.getDeclaredProperties(declaration).filter(function (p) { return p &#x26;&#x26; p.name; }).map(function (p) {
-return p.name.text; });
-};
-exports.getDeclaredMethods = function (declaration) {
-    return declaration.members.filter(function (m) { return m.kind === SyntaxKind.MethodDeclaration; });
-};
-exports.getDeclaredMethodNames = function (declaration) {
-    return exports.<span class="apidocCodeKeywordSpan">getDeclaredMethods</span>(declaration)
-        .map(function (d) { return d.name.text; });
-};
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.classDeclarationUtils.getDeclaredProperties" id="apidoc.element.codelyzer.classDeclarationUtils.getDeclaredProperties">
-        function <span class="apidocSignatureSpan">codelyzer.classDeclarationUtils.</span>getDeclaredProperties
-        <span class="apidocSignatureSpan">(declaration)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">getDeclaredProperties = function (declaration) {
-    var m = declaration.members;
-    var ctr = m.filter(function (m) { return m.kind === SyntaxKind.Constructor; }).pop();
-    var params = [];
-    if (ctr) {
-        params = (ctr.parameters || [])
-            .filter(function (p) { return p.kind === SyntaxKind.Parameter; });
+function isIdentifierStart(code, next) {
+    var target = code;
+    if (target == chars.$MINUS) {
+        target = next;
     }
-    return m.filter(function (m) { return m.kind === SyntaxKind.PropertyDeclaration ||
-        m.kind === SyntaxKind.GetAccessor || m.kind === SyntaxKind.SetAccessor; }).concat(params);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-    params = (ctr.parameters || [])
-        .filter(function (p) { return p.kind === SyntaxKind.Parameter; });
+    return chars.<span class="apidocCodeKeywordSpan">isAsciiLetter</span>(target) || target == chars.$BACKSLASH || target == chars
+.$MINUS ||
+        target == chars.$_;
 }
-return m.filter(function (m) { return m.kind === SyntaxKind.PropertyDeclaration ||
-    m.kind === SyntaxKind.GetAccessor || m.kind === SyntaxKind.SetAccessor; }).concat(params);
-};
-exports.getDeclaredPropertyNames = function (declaration) {
-return exports.<span class="apidocCodeKeywordSpan">getDeclaredProperties</span>(declaration).filter(function (p) { return p &#x26
-;&#x26; p.name; }).map(function (p) { return p.name.text; });
-};
-exports.getDeclaredMethods = function (declaration) {
-return declaration.members.filter(function (m) { return m.kind === SyntaxKind.MethodDeclaration; });
-};
-exports.getDeclaredMethodNames = function (declaration) {
-return exports.getDeclaredMethods(declaration)
-    .map(function (d) { return d.name.text; });
+function isIdentifierPart(target) {
+    return chars.isAsciiLetter(target) || target == chars.$BACKSLASH || target == chars.$MINUS ||
+        target == chars.$_ || chars.isDigit(target);
+}
+function isValidPseudoSelectorCharacter(code) {
 ...</pre></li>
     </ul>
 
 
 
     <h2>
-        <a href="#apidoc.element.codelyzer.classDeclarationUtils.getDeclaredPropertyNames" id="apidoc.element.codelyzer.classDeclarationUtils.getDeclaredPropertyNames">
-        function <span class="apidocSignatureSpan">codelyzer.classDeclarationUtils.</span>getDeclaredPropertyNames
-        <span class="apidocSignatureSpan">(declaration)</span>
+        <a href="#apidoc.element.codelyzer.chars.isDigit" id="apidoc.element.codelyzer.chars.isDigit">
+        function <span class="apidocSignatureSpan">codelyzer.chars.</span>isDigit
+        <span class="apidocSignatureSpan">(code)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">getDeclaredPropertyNames = function (declaration) {
-    return exports.getDeclaredProperties(declaration).filter(function (p) { return p &#x26;&#x26; p.name; }).map(function (p) { return p.name
-.text; });
+    <li>description and source-code<pre class="apidocCodePre">function isDigit(code) {
+    return exports.$0 &#x3c;= code &#x26;&#x26; code &#x3c;= exports.$9;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (isStringStart(peek, peekPeek)) {
+    return this.scanString();
+}
+if (this._currentMode == CssLexerMode.STYLE_VALUE_FUNCTION) {
+    return this.scanCssValueFunction();
+}
+var isModifier = peek == chars.$PLUS || peek == chars.$MINUS;
+var digitA = isModifier ? false : chars.<span class="apidocCodeKeywordSpan">isDigit</span>(peek);
+var digitB = chars.isDigit(peekPeek);
+if (digitA || (isModifier &#x26;&#x26; (peekPeek == chars.$PERIOD || digitB)) ||
+    (peek == chars.$PERIOD &#x26;&#x26; digitB)) {
+    return this.scanNumber();
+}
+if (peek == chars.$AT) {
+    return this.scanAtExpression();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.chars.isWhitespace" id="apidoc.element.codelyzer.chars.isWhitespace">
+        function <span class="apidocSignatureSpan">codelyzer.chars.</span>isWhitespace
+        <span class="apidocSignatureSpan">(code)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isWhitespace(code) {
+    return (code &#x3e;= exports.$TAB &#x26;&#x26; code &#x3c;= exports.$SPACE) || (code === exports.$NBSP);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    this.consumeWhitespace();
+    while (this.peek == chars.$SEMICOLON) {
+        this.advance();
+        this.consumeWhitespace();
+    }
+};
+CssScanner.prototype.consumeWhitespace = function () {
+    while (chars.<span class="apidocCodeKeywordSpan">isWhitespace</span>(this.peek) || isNewline(this.peek)) {
+        this.advance();
+        if (!this._trackComments &#x26;&#x26; isCommentStart(this.peek, this.peekPeek)) {
+            this.advance();
+            this.advance();
+            while (!isCommentEnd(this.peek, this.peekPeek)) {
+                if (this.peek == chars.$EOF) {
+                    this.error(&#x27;Unterminated comment&#x27;);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.codelyzer.cssAst" id="apidoc.module.codelyzer.cssAst">module codelyzer.cssAst</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssAst.CssAst" id="apidoc.element.codelyzer.cssAst.CssAst">
+        function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssAst
+        <span class="apidocSignatureSpan">(location)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssAst(location) {
+    this.location = location;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssAst.CssAtRulePredicateAst" id="apidoc.element.codelyzer.cssAst.CssAtRulePredicateAst">
+        function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssAtRulePredicateAst
+        <span class="apidocSignatureSpan">(location, strValue, tokens)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssAtRulePredicateAst(location, strValue, tokens) {
+    var _this = _super.call(this, location) || this;
+    _this.strValue = strValue;
+    _this.tokens = tokens;
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+case cssAst_1.BlockType.MediaQuery:
+    this._scanner.setMode(cssLexer_1.CssLexerMode.MEDIA_QUERY);
+    tokens = this._collectUntilDelim(delimiters | RBRACE_DELIM_FLAG | LBRACE_DELIM_FLAG);
+    endToken = tokens[tokens.length - 1];
+    end = endToken.index + endToken.strValue.length - 1;
+    strValue = this._extractSourceContent(start, end);
+    span = this._generateSourceSpan(startToken, endToken);
+    query = new cssAst_1.<span class="apidocCodeKeywordSpan">CssAtRulePredicateAst</span>(span, strValue, tokens);
+    block = this._parseBlock(delimiters);
+    strValue = this._extractSourceContent(start, this._getScannerIndex() - 1);
+    span = this._generateSourceSpan(startToken, block);
+    return new cssAst_1.CssMediaQueryRuleAst(span, strValue, query, block);
+case cssAst_1.BlockType.Document:
+case cssAst_1.BlockType.Supports:
+case cssAst_1.BlockType.Page:
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssAst.CssBlockAst" id="apidoc.element.codelyzer.cssAst.CssBlockAst">
+        function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssBlockAst
+        <span class="apidocSignatureSpan">(location, entries)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssBlockAst(location, entries) {
+    var _this = _super.call(this, location) || this;
+    _this.entries = entries;
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    var startToken = this._consume(cssLexer_1.CssTokenType.Character, &#x27;{&#x27;);
+    var definitions = [];
+    while (!characterContainsDelimiter(this._scanner.peek, delimiters)) {
+        definitions.push(this._parseKeyframeDefinition(delimiters));
+    }
+    var endToken = this._consume(cssLexer_1.CssTokenType.Character, &#x27;}&#x27;);
+    var span = this._generateSourceSpan(startToken, endToken);
+    return new cssAst_1.<span class="apidocCodeKeywordSpan">CssBlockAst</span>(span, definitions);
+};
+CssParser.prototype._parseKeyframeDefinition = function (delimiters) {
+    var start = this._getScannerIndex();
+    var stepTokens = [];
+    delimiters |= LBRACE_DELIM_FLAG;
+    while (!characterContainsDelimiter(this._scanner.peek, delimiters)) {
+        stepTokens.push(this._parseKeyframeLabel(delimiters | COMMA_DELIM_FLAG));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssAst.CssBlockDefinitionRuleAst" id="apidoc.element.codelyzer.cssAst.CssBlockDefinitionRuleAst">
+        function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssBlockDefinitionRuleAst
+        <span class="apidocSignatureSpan">(location, strValue, type, query, block)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssBlockDefinitionRuleAst(location, strValue, type, query, block) {
+    var _this = _super.call(this, location, type, block) || this;
+    _this.strValue = strValue;
+    _this.query = query;
+    var firstCssToken = query.tokens[0];
+    _this.name = new cssLexer_1.CssToken(firstCssToken.index, firstCssToken.column, firstCssToken.line, cssLexer_1.CssTokenType.
+Identifier, _this.strValue);
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    end = endToken.index + endToken.strValue.length - 1;
+    strValue = this._extractSourceContent(start, end);
+    span = this._generateSourceSpan(startToken, tokens[tokens.length - 1]);
+    query = new cssAst_1.CssAtRulePredicateAst(span, strValue, tokens);
+    block = this._parseBlock(delimiters);
+    strValue = this._extractSourceContent(start, block.end.offset);
+    span = this._generateSourceSpan(startToken, block);
+    return new cssAst_1.<span class="apidocCodeKeywordSpan">CssBlockDefinitionRuleAst</span>(span, strValue, type, query, block);
+default:
+    var listOfTokens_1 = [];
+    var tokenName = token.strValue;
+    this._scanner.setMode(cssLexer_1.CssLexerMode.ALL);
+    this._error(cssLexer_1.generateErrorMessage(this._getSourceContent(), &#x22;The CSS \&#x22;at\&#x22; rule \&#x22;&#x22; + tokenName
+ + &#x22;\&#x22; is not allowed to used here&#x22;, token.strValue, token.index, token.line, token.column), token);
+    this._collectUntilDelim(delimiters | LBRACE_DELIM_FLAG | SEMICOLON_DELIM_FLAG)
+        .forEach(function (token) { listOfTokens_1.push(token); });
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssAst.CssBlockRuleAst" id="apidoc.element.codelyzer.cssAst.CssBlockRuleAst">
+        function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssBlockRuleAst
+        <span class="apidocSignatureSpan">(location, type, block, name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssBlockRuleAst(location, type, block, name) {
+    if (name === void 0) { name = null; }
+    var _this = _super.call(this, location) || this;
+    _this.location = location;
+    _this.type = type;
+    _this.block = block;
+    _this.name = name;
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    this._scanner.consumeEmptyStatements();
+    span = this._generateSourceSpan(startToken, value);
+    return new cssAst_1.CssInlineRuleAst(span, type, value);
+case cssAst_1.BlockType.Viewport:
+case cssAst_1.BlockType.FontFace:
+    block = this._parseStyleBlock(delimiters);
+    span = this._generateSourceSpan(startToken, block);
+    return new cssAst_1.<span class="apidocCodeKeywordSpan">CssBlockRuleAst</span>(span, type, block);
+case cssAst_1.BlockType.Keyframes:
+    tokens = this._collectUntilDelim(delimiters | RBRACE_DELIM_FLAG | LBRACE_DELIM_FLAG);
+    var name_1 = tokens[0];
+    block = this._parseKeyframeBlock(delimiters);
+    span = this._generateSourceSpan(startToken, block);
+    return new cssAst_1.CssKeyframeRuleAst(span, name_1, block);
+case cssAst_1.BlockType.MediaQuery:
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssAst.CssDefinitionAst" id="apidoc.element.codelyzer.cssAst.CssDefinitionAst">
+        function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssDefinitionAst
+        <span class="apidocSignatureSpan">(location, property, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssDefinitionAst(location, property, value) {
+    var _this = _super.call(this, location) || this;
+    _this.property = property;
+    _this.value = value;
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        value = this._parseValue(delimiters);
+        endToken = value;
+    }
+    else {
+        this._error(cssLexer_1.generateErrorMessage(this._getSourceContent(), &#x22;The CSS property was not paired with a style
+ value&#x22;, prop.strValue, prop.index, prop.line, prop.column), prop);
+    }
+    var span = this._generateSourceSpan(prop, endToken);
+    return new cssAst_1.<span class="apidocCodeKeywordSpan">CssDefinitionAst</span>(span, prop, value);
+};
+CssParser.prototype._assertCondition = function (status, errorMessage, problemToken) {
+    if (!status) {
+        this._error(errorMessage, problemToken);
+        return true;
+    }
+    return false;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssAst.CssInlineRuleAst" id="apidoc.element.codelyzer.cssAst.CssInlineRuleAst">
+        function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssInlineRuleAst
+        <span class="apidocSignatureSpan">(location, type, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssInlineRuleAst(location, type, value) {
+    var _this = _super.call(this, location) || this;
+    _this.type = type;
+    _this.value = value;
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+case cssAst_1.BlockType.Charset:
+case cssAst_1.BlockType.Namespace:
+case cssAst_1.BlockType.Import:
+    var value = this._parseValue(delimiters);
+    this._scanner.setMode(cssLexer_1.CssLexerMode.BLOCK);
+    this._scanner.consumeEmptyStatements();
+    span = this._generateSourceSpan(startToken, value);
+    return new cssAst_1.<span class="apidocCodeKeywordSpan">CssInlineRuleAst</span>(span, type, value);
+case cssAst_1.BlockType.Viewport:
+case cssAst_1.BlockType.FontFace:
+    block = this._parseStyleBlock(delimiters);
+    span = this._generateSourceSpan(startToken, block);
+    return new cssAst_1.CssBlockRuleAst(span, type, block);
+case cssAst_1.BlockType.Keyframes:
+    tokens = this._collectUntilDelim(delimiters | RBRACE_DELIM_FLAG | LBRACE_DELIM_FLAG);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssAst.CssKeyframeDefinitionAst" id="apidoc.element.codelyzer.cssAst.CssKeyframeDefinitionAst">
+        function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssKeyframeDefinitionAst
+        <span class="apidocSignatureSpan">(location, steps, block)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssKeyframeDefinitionAst(location, steps, block) {
+    var _this = _super.call(this, location, BlockType.Keyframes, block, mergeTokens(steps, &#x27;,&#x27;)) || this;
+    _this.steps = steps;
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        stepTokens.push(this._parseKeyframeLabel(delimiters | COMMA_DELIM_FLAG));
+        if (this._scanner.peek != chars.$LBRACE) {
+            this._consume(cssLexer_1.CssTokenType.Character, &#x27;,&#x27;);
+        }
+    }
+    var stylesBlock = this._parseStyleBlock(delimiters | RBRACE_DELIM_FLAG);
+    var span = this._generateSourceSpan(stepTokens[0], stylesBlock);
+    var ast = new cssAst_1.<span class="apidocCodeKeywordSpan">CssKeyframeDefinitionAst</span>(span, stepTokens, stylesBlock);
+    this._scanner.setMode(cssLexer_1.CssLexerMode.BLOCK);
+    return ast;
+};
+CssParser.prototype._parseKeyframeLabel = function (delimiters) {
+    this._scanner.setMode(cssLexer_1.CssLexerMode.KEYFRAME_BLOCK);
+    return cssAst_1.mergeTokens(this._collectUntilDelim(delimiters));
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssAst.CssKeyframeRuleAst" id="apidoc.element.codelyzer.cssAst.CssKeyframeRuleAst">
+        function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssKeyframeRuleAst
+        <span class="apidocSignatureSpan">(location, name, block)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssKeyframeRuleAst(location, name, block) {
+    return _super.call(this, location, BlockType.Keyframes, block, name) || this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    span = this._generateSourceSpan(startToken, block);
+    return new cssAst_1.CssBlockRuleAst(span, type, block);
+case cssAst_1.BlockType.Keyframes:
+    tokens = this._collectUntilDelim(delimiters | RBRACE_DELIM_FLAG | LBRACE_DELIM_FLAG);
+    var name_1 = tokens[0];
+    block = this._parseKeyframeBlock(delimiters);
+    span = this._generateSourceSpan(startToken, block);
+    return new cssAst_1.<span class="apidocCodeKeywordSpan">CssKeyframeRuleAst</span>(span, name_1, block);
+case cssAst_1.BlockType.MediaQuery:
+    this._scanner.setMode(cssLexer_1.CssLexerMode.MEDIA_QUERY);
+    tokens = this._collectUntilDelim(delimiters | RBRACE_DELIM_FLAG | LBRACE_DELIM_FLAG);
+    endToken = tokens[tokens.length - 1];
+    end = endToken.index + endToken.strValue.length - 1;
+    strValue = this._extractSourceContent(start, end);
+    span = this._generateSourceSpan(startToken, endToken);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssAst.CssMediaQueryRuleAst" id="apidoc.element.codelyzer.cssAst.CssMediaQueryRuleAst">
+        function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssMediaQueryRuleAst
+        <span class="apidocSignatureSpan">(location, strValue, query, block)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssMediaQueryRuleAst(location, strValue, query, block) {
+    return _super.call(this, location, strValue, BlockType.MediaQuery, query, block) || this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    end = endToken.index + endToken.strValue.length - 1;
+    strValue = this._extractSourceContent(start, end);
+    span = this._generateSourceSpan(startToken, endToken);
+    query = new cssAst_1.CssAtRulePredicateAst(span, strValue, tokens);
+    block = this._parseBlock(delimiters);
+    strValue = this._extractSourceContent(start, this._getScannerIndex() - 1);
+    span = this._generateSourceSpan(startToken, block);
+    return new cssAst_1.<span class="apidocCodeKeywordSpan">CssMediaQueryRuleAst</span>(span, strValue, query, block);
+case cssAst_1.BlockType.Document:
+case cssAst_1.BlockType.Supports:
+case cssAst_1.BlockType.Page:
+    this._scanner.setMode(cssLexer_1.CssLexerMode.AT_RULE_QUERY);
+    tokens = this._collectUntilDelim(delimiters | RBRACE_DELIM_FLAG | LBRACE_DELIM_FLAG);
+    endToken = tokens[tokens.length - 1];
+    end = endToken.index + endToken.strValue.length - 1;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssAst.CssPseudoSelectorAst" id="apidoc.element.codelyzer.cssAst.CssPseudoSelectorAst">
+        function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssPseudoSelectorAst
+        <span class="apidocSignatureSpan">(location, strValue, name, tokens, innerSelectors)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssPseudoSelectorAst(location, strValue, name, tokens, innerSelectors) {
+    var _this = _super.call(this, location) || this;
+    _this.strValue = strValue;
+    _this.name = name;
+    _this.tokens = tokens;
+    _this.innerSelectors = innerSelectors;
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        var closeParenToken = this._consume(cssLexer_1.CssTokenType.Character, &#x27;)&#x27;);
+        tokens.push(closeParenToken);
+    }
+    var end = this._getScannerIndex() - 1;
+    var strValue = this._extractSourceContent(start, end);
+    var endToken = tokens[tokens.length - 1];
+    var span = this._generateSourceSpan(startToken, endToken);
+    return new cssAst_1.<span class="apidocCodeKeywordSpan">CssPseudoSelectorAst</span>(span, strValue, pseudoSelectorName, tokens
+, innerSelectors);
+};
+CssParser.prototype._parseSimpleSelector = function (delimiters) {
+    var start = this._getScannerIndex();
+    delimiters |= COMMA_DELIM_FLAG;
+    this._scanner.setMode(cssLexer_1.CssLexerMode.SELECTOR);
+    var selectorCssTokens = [];
+    var pseudoSelectors = [];
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssAst.CssRuleAst" id="apidoc.element.codelyzer.cssAst.CssRuleAst">
+        function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssRuleAst
+        <span class="apidocSignatureSpan">(location)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssRuleAst(location) {
+    return _super.call(this, location) || this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssAst.CssSelectorAst" id="apidoc.element.codelyzer.cssAst.CssSelectorAst">
+        function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssSelectorAst
+        <span class="apidocSignatureSpan">(location, selectorParts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssSelectorAst(location, selectorParts) {
+    var _this = _super.call(this, location) || this;
+    _this.selectorParts = selectorParts;
+    _this.strValue = selectorParts.map(function (part) { return part.strValue; }).join(&#x27;&#x27;);
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    while (!characterContainsDelimiter(this._scanner.peek, delimiters)) {
+        simpleSelectors.push(this._parseSimpleSelector(delimiters));
+        this._scanner.consumeWhitespace();
+    }
+    var firstSelector = simpleSelectors[0];
+    var lastSelector = simpleSelectors[simpleSelectors.length - 1];
+    var span = this._generateSourceSpan(firstSelector, lastSelector);
+    return new cssAst_1.<span class="apidocCodeKeywordSpan">CssSelectorAst</span>(span, simpleSelectors);
+};
+CssParser.prototype._parseValue = function (delimiters) {
+    delimiters |= RBRACE_DELIM_FLAG | SEMICOLON_DELIM_FLAG | NEWLINE_DELIM_FLAG;
+    this._scanner.setMode(cssLexer_1.CssLexerMode.STYLE_VALUE);
+    var start = this._getScannerIndex();
+    var tokens = [];
+    var wsStr = &#x27;&#x27;;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssAst.CssSelectorPartAst" id="apidoc.element.codelyzer.cssAst.CssSelectorPartAst">
+        function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssSelectorPartAst
+        <span class="apidocSignatureSpan">(location)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssSelectorPartAst(location) {
+    return _super.call(this, location) || this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssAst.CssSelectorRuleAst" id="apidoc.element.codelyzer.cssAst.CssSelectorRuleAst">
+        function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssSelectorRuleAst
+        <span class="apidocSignatureSpan">(location, selectors, block)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssSelectorRuleAst(location, selectors, block) {
+    var _this = _super.call(this, location, BlockType.Selector, block) || this;
+    _this.selectors = selectors;
+    _this.strValue = selectors.map(function (selector) { return selector.strValue; }).join(&#x27;,&#x27;);
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var selectors = this._parseSelectors(delimiters);
+var block = this._parseStyleBlock(delimiters);
+var ruleAst;
+var span;
+var startSelector = selectors[0];
+if (block) {
+    var span = this._generateSourceSpan(startSelector, block);
+    ruleAst = new cssAst_1.<span class="apidocCodeKeywordSpan">CssSelectorRuleAst</span>(span, selectors, block);
+}
+else {
+    var name = this._extractSourceContent(start, this._getScannerIndex() - 1);
+    var innerTokens = [];
+    selectors.forEach(function (selector) {
+        selector.selectorParts.forEach(function (part) {
+            part.tokens.forEach(function (token) { innerTokens.push(token); });
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssAst.CssSimpleSelectorAst" id="apidoc.element.codelyzer.cssAst.CssSimpleSelectorAst">
+        function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssSimpleSelectorAst
+        <span class="apidocSignatureSpan">(location, tokens, strValue, pseudoSelectors, operator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssSimpleSelectorAst(location, tokens, strValue, pseudoSelectors, operator) {
+    var _this = _super.call(this, location) || this;
+    _this.tokens = tokens;
+    _this.strValue = strValue;
+    _this.pseudoSelectors = pseudoSelectors;
+    _this.operator = operator;
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        endTokenOrAst = pseudoSelectors[pseudoSelectors.length - 1];
+    }
+    if (operator) {
+        startTokenOrAst = startTokenOrAst || operator;
+        endTokenOrAst = operator;
+    }
+    var span = this._generateSourceSpan(startTokenOrAst, endTokenOrAst);
+    return new cssAst_1.<span class="apidocCodeKeywordSpan">CssSimpleSelectorAst</span>(span, selectorCssTokens, strValue, pseudoSelectors
+, operator);
+};
+CssParser.prototype._parseSelector = function (delimiters) {
+    delimiters |= COMMA_DELIM_FLAG;
+    this._scanner.setMode(cssLexer_1.CssLexerMode.SELECTOR);
+    var simpleSelectors = [];
+    while (!characterContainsDelimiter(this._scanner.peek, delimiters)) {
+        simpleSelectors.push(this._parseSimpleSelector(delimiters));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssAst.CssStyleSheetAst" id="apidoc.element.codelyzer.cssAst.CssStyleSheetAst">
+        function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssStyleSheetAst
+        <span class="apidocSignatureSpan">(location, rules)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssStyleSheetAst(location, rules) {
+    var _this = _super.call(this, location) || this;
+    _this.rules = rules;
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        results.push(this._parseRule(delimiters));
+    }
+    var span = null;
+    if (results.length &#x3e; 0) {
+        var firstRule = results[0];
+        span = this._generateSourceSpan(firstRule, this._lastToken);
+    }
+    return new cssAst_1.<span class="apidocCodeKeywordSpan">CssStyleSheetAst</span>(span, results);
+};
+CssParser.prototype._getSourceContent = function () { return this._scanner ? this._scanner.input : &#x27;&#x27;; };
+CssParser.prototype._extractSourceContent = function (start, end) {
+    return this._getSourceContent().substring(start, end + 1);
+};
+CssParser.prototype._generateSourceSpan = function (start, end) {
+    if (end === void 0) { end = null; }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssAst.CssStyleValueAst" id="apidoc.element.codelyzer.cssAst.CssStyleValueAst">
+        function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssStyleValueAst
+        <span class="apidocSignatureSpan">(location, tokens, strValue)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssStyleValueAst(location, tokens, strValue) {
+    var _this = _super.call(this, location) || this;
+    _this.tokens = tokens;
+    _this.strValue = strValue;
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    else if (code != chars.$RBRACE) {
+        this._error(cssLexer_1.generateErrorMessage(this._getSourceContent(), &#x22;The CSS key/value definition did not end with
+ a semicolon&#x22;, previous.strValue, previous.index, previous.line, previous.column), previous);
+    }
+    var strValue = this._extractSourceContent(start, end);
+    var startToken = tokens[0];
+    var endToken = tokens[tokens.length - 1];
+    var span = this._generateSourceSpan(startToken, endToken);
+    return new cssAst_1.<span class="apidocCodeKeywordSpan">CssStyleValueAst</span>(span, tokens, strValue);
+};
+CssParser.prototype._collectUntilDelim = function (delimiters, assertType) {
+    if (assertType === void 0) { assertType = null; }
+    var tokens = [];
+    while (!characterContainsDelimiter(this._scanner.peek, delimiters)) {
+        var val = assertType ? this._consume(assertType) : this._scan();
+        tokens.push(val);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssAst.CssStylesBlockAst" id="apidoc.element.codelyzer.cssAst.CssStylesBlockAst">
+        function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssStylesBlockAst
+        <span class="apidocSignatureSpan">(location, definitions)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssStylesBlockAst(location, definitions) {
+    var _this = _super.call(this, location, definitions) || this;
+    _this.definitions = definitions;
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        definitions.push(this._parseDefinition(delimiters));
+        this._scanner.consumeEmptyStatements();
+    }
+    var endToken = this._consume(cssLexer_1.CssTokenType.Character, &#x27;}&#x27;);
+    this._scanner.setMode(cssLexer_1.CssLexerMode.STYLE_BLOCK);
+    this._scanner.consumeEmptyStatements();
+    var span = this._generateSourceSpan(startToken, endToken);
+    return new cssAst_1.<span class="apidocCodeKeywordSpan">CssStylesBlockAst</span>(span, definitions);
+};
+CssParser.prototype._parseDefinition = function (delimiters) {
+    this._scanner.setMode(cssLexer_1.CssLexerMode.STYLE_BLOCK);
+    var prop = this._consume(cssLexer_1.CssTokenType.Identifier);
+    var parseValue = false;
+    var value = null;
+    var endToken = prop;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssAst.CssUnknownRuleAst" id="apidoc.element.codelyzer.cssAst.CssUnknownRuleAst">
+        function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssUnknownRuleAst
+        <span class="apidocSignatureSpan">(location, ruleName, tokens)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssUnknownRuleAst(location, ruleName, tokens) {
+    var _this = _super.call(this, location) || this;
+    _this.ruleName = ruleName;
+    _this.tokens = tokens;
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+                listOfTokens_1.push(this._consume(cssLexer_1.CssTokenType.Character, &#x27;{&#x27;));
+                this._collectUntilDelim(delimiters | RBRACE_DELIM_FLAG | LBRACE_DELIM_FLAG)
+                    .forEach(function (token) { listOfTokens_1.push(token); });
+                listOfTokens_1.push(this._consume(cssLexer_1.CssTokenType.Character, &#x27;}&#x27;));
+            }
+            endToken = listOfTokens_1[listOfTokens_1.length - 1];
+            span = this._generateSourceSpan(startToken, endToken);
+            return new cssAst_1.<span class="apidocCodeKeywordSpan">CssUnknownRuleAst</span>(span, tokenName, listOfTokens_1);
+    }
+};
+CssParser.prototype._parseSelectorRule = function (delimiters) {
+    var start = this._getScannerIndex();
+    var selectors = this._parseSelectors(delimiters);
+    var block = this._parseStyleBlock(delimiters);
+    var ruleAst;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssAst.CssUnknownTokenListAst" id="apidoc.element.codelyzer.cssAst.CssUnknownTokenListAst">
+        function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>CssUnknownTokenListAst
+        <span class="apidocSignatureSpan">(location, name, tokens)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssUnknownTokenListAst(location, name, tokens) {
+    var _this = _super.call(this, location) || this;
+    _this.name = name;
+    _this.tokens = tokens;
+    return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        selectors.forEach(function (selector) {
+            selector.selectorParts.forEach(function (part) {
+                part.tokens.forEach(function (token) { innerTokens.push(token); });
+            });
+        });
+        var endToken = innerTokens[innerTokens.length - 1];
+        span = this._generateSourceSpan(startSelector, endToken);
+        ruleAst = new cssAst_1.<span class="apidocCodeKeywordSpan">CssUnknownTokenListAst</span>(span, name, innerTokens);
+    }
+    this._scanner.setMode(cssLexer_1.CssLexerMode.BLOCK);
+    this._scanner.consumeEmptyStatements();
+    return ruleAst;
+};
+CssParser.prototype._parseSelectors = function (delimiters) {
+    delimiters |= LBRACE_DELIM_FLAG | SEMICOLON_DELIM_FLAG;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssAst.mergeTokens" id="apidoc.element.codelyzer.cssAst.mergeTokens">
+        function <span class="apidocSignatureSpan">codelyzer.cssAst.</span>mergeTokens
+        <span class="apidocSignatureSpan">(tokens, separator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function mergeTokens(tokens, separator) {
+    if (separator === void 0) { separator = &#x27;&#x27;; }
+    var mainToken = tokens[0];
+    var str = mainToken.strValue;
+    for (var i = 1; i &#x3c; tokens.length; i++) {
+        str += separator + tokens[i].strValue;
+    }
+    return new cssLexer_1.CssToken(mainToken.index, mainToken.column, mainToken.line, mainToken.type, str);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    var span = this._generateSourceSpan(stepTokens[0], stylesBlock);
+    var ast = new cssAst_1.CssKeyframeDefinitionAst(span, stepTokens, stylesBlock);
+    this._scanner.setMode(cssLexer_1.CssLexerMode.BLOCK);
+    return ast;
+};
+CssParser.prototype._parseKeyframeLabel = function (delimiters) {
+    this._scanner.setMode(cssLexer_1.CssLexerMode.KEYFRAME_BLOCK);
+    return cssAst_1.<span class="apidocCodeKeywordSpan">mergeTokens</span>(this._collectUntilDelim(delimiters));
+};
+CssParser.prototype._parsePseudoSelector = function (delimiters) {
+    var start = this._getScannerIndex();
+    delimiters &#x26;= ~COMMA_DELIM_FLAG;
+    var startingDelims = delimiters;
+    var startToken = this._consume(cssLexer_1.CssTokenType.Character, &#x27;:&#x27;);
+    var tokens = [startToken];
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.codelyzer.cssLexer" id="apidoc.module.codelyzer.cssLexer">module codelyzer.cssLexer</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssLexer.CssLexer" id="apidoc.element.codelyzer.cssLexer.CssLexer">
+        function <span class="apidocSignatureSpan">codelyzer.cssLexer.</span>CssLexer
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssLexer() {
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}());
+exports.ParsedCssResult = ParsedCssResult;
+var CssParser = (function () {
+function CssParser() {
+    this._errors = [];
+}
+CssParser.prototype.parse = function (css, url) {
+    var lexer = new cssLexer_1.<span class="apidocCodeKeywordSpan">CssLexer</span>();
+    this._file = new parseUtil_1.ParseSourceFile(css, url);
+    this._scanner = lexer.scan(css, false);
+    var ast = this._parseStyleSheet(EOF_DELIM_FLAG);
+    var errors = this._errors;
+    this._errors = [];
+    var result = new ParsedCssResult(errors, ast);
+    this._file = null;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssLexer.CssScanner" id="apidoc.element.codelyzer.cssLexer.CssScanner">
+        function <span class="apidocSignatureSpan">codelyzer.cssLexer.</span>CssScanner
+        <span class="apidocSignatureSpan">(input, _trackComments)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssScanner(input, _trackComments) {
+    if (_trackComments === void 0) { _trackComments = false; }
+    this.input = input;
+    this._trackComments = _trackComments;
+    this.length = 0;
+    this.index = -1;
+    this.column = -1;
+    this.line = 0;
+    this._currentMode = CssLexerMode.BLOCK;
+    this._currentError = null;
+    this.length = this.input.length;
+    this.peekPeek = this.peekAt(0);
+    this.advance();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssLexer.CssScannerError" id="apidoc.element.codelyzer.cssLexer.CssScannerError">
+        function <span class="apidocSignatureSpan">codelyzer.cssLexer.</span>CssScannerError
+        <span class="apidocSignatureSpan">(token, message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssScannerError(token, message) {
+    this.token = token;
+    this.rawMessage = message;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssLexer.CssToken" id="apidoc.element.codelyzer.cssLexer.CssToken">
+        function <span class="apidocSignatureSpan">codelyzer.cssLexer.</span>CssToken
+        <span class="apidocSignatureSpan">(index, column, line, type, strValue)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssToken(index, column, line, type, strValue) {
+    this.index = index;
+    this.column = column;
+    this.line = line;
+    this.type = type;
+    this.strValue = strValue;
+    this.numValue = charCode(strValue, 0);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var CssBlockDefinitionRuleAst = (function (_super) {
+    __extends(CssBlockDefinitionRuleAst, _super);
+    function CssBlockDefinitionRuleAst(location, strValue, type, query, block) {
+        var _this = _super.call(this, location, type, block) || this;
+        _this.strValue = strValue;
+        _this.query = query;
+        var firstCssToken = query.tokens[0];
+        _this.name = new cssLexer_1.<span class="apidocCodeKeywordSpan">CssToken</span>(firstCssToken.index, firstCssToken.column
+, firstCssToken.line, cssLexer_1.CssTokenType.Identifier, _this.strValue);
+        return _this;
+    }
+    CssBlockDefinitionRuleAst.prototype.visit = function (visitor, context) {
+        return visitor.visitCssBlock(this.block, context);
+    };
+    return CssBlockDefinitionRuleAst;
+}(CssBlockRuleAst));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssLexer.LexedCssResult" id="apidoc.element.codelyzer.cssLexer.LexedCssResult">
+        function <span class="apidocSignatureSpan">codelyzer.cssLexer.</span>LexedCssResult
+        <span class="apidocSignatureSpan">(error, token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function LexedCssResult(error, token) {
+    this.error = error;
+    this.token = token;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssLexer.findProblemCode" id="apidoc.element.codelyzer.cssLexer.findProblemCode">
+        function <span class="apidocSignatureSpan">codelyzer.cssLexer.</span>findProblemCode
+        <span class="apidocSignatureSpan">(input, errorValue, index, column)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function findProblemCode(input, errorValue, index, column) {
+    var endOfProblemLine = index;
+    var current = charCode(input, index);
+    while (current &#x3e; 0 &#x26;&#x26; !isNewline(current)) {
+        current = charCode(input, ++endOfProblemLine);
+    }
+    var choppedString = input.substring(0, endOfProblemLine);
+    var pointerPadding = &#x27;&#x27;;
+    for (var i = 0; i &#x3c; column; i++) {
+        pointerPadding += &#x27; &#x27;;
+    }
+    var pointerString = &#x27;&#x27;;
+    for (var i = 0; i &#x3c; errorValue.length; i++) {
+        pointerString += &#x27;^&#x27;;
+    }
+    return choppedString + &#x27;\n&#x27; + pointerPadding + pointerString + &#x27;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssLexer.generateErrorMessage" id="apidoc.element.codelyzer.cssLexer.generateErrorMessage">
+        function <span class="apidocSignatureSpan">codelyzer.cssLexer.</span>generateErrorMessage
+        <span class="apidocSignatureSpan">(input, message, errorValue, index, row, column)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function generateErrorMessage(input, message, errorValue, index, row, column) {
+    return message + &#x22; at column &#x22; + row + &#x22;:&#x22; + column + &#x22; in expression [&#x22; +
+        findProblemCode(input, errorValue, index, column) + &#x27;]&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    strValue = this._extractSourceContent(start, block.end.offset);
+    span = this._generateSourceSpan(startToken, block);
+    return new cssAst_1.CssBlockDefinitionRuleAst(span, strValue, type, query, block);
+default:
+    var listOfTokens_1 = [];
+    var tokenName = token.strValue;
+    this._scanner.setMode(cssLexer_1.CssLexerMode.ALL);
+    this._error(cssLexer_1.<span class="apidocCodeKeywordSpan">generateErrorMessage</span>(this._getSourceContent(), &#x22;The CSS\&#x22;at\&#x22; rule \&#x22;&#x22; + tokenName + &#x22;\&#x22; is not allowed to used here&#x22;, token.strValue, token.index, token.line, token.column), token);
+    this._collectUntilDelim(delimiters | LBRACE_DELIM_FLAG | SEMICOLON_DELIM_FLAG)
+        .forEach(function (token) { listOfTokens_1.push(token); });
+    if (this._scanner.peek == chars.$LBRACE) {
+        listOfTokens_1.push(this._consume(cssLexer_1.CssTokenType.Character, &#x27;{&#x27;));
+        this._collectUntilDelim(delimiters | RBRACE_DELIM_FLAG | LBRACE_DELIM_FLAG)
+            .forEach(function (token) { listOfTokens_1.push(token); });
+        listOfTokens_1.push(this._consume(cssLexer_1.CssTokenType.Character, &#x27;}&#x27;));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssLexer.isNewline" id="apidoc.element.codelyzer.cssLexer.isNewline">
+        function <span class="apidocSignatureSpan">codelyzer.cssLexer.</span>isNewline
+        <span class="apidocSignatureSpan">(code)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isNewline(code) {
+    switch (code) {
+        case chars.$FF:
+        case chars.$CR:
+        case chars.$LF:
+        case chars.$VTAB:
+            return true;
+        default:
+            return false;
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        return LBRACE_DELIM_FLAG;
+    case chars.$RPAREN:
+        return RPAREN_DELIM_FLAG;
+    case chars.$SPACE:
+    case chars.$TAB:
+        return SPACE_DELIM_FLAG;
+    default:
+        return cssLexer_1.<span class="apidocCodeKeywordSpan">isNewline</span>(code) ? NEWLINE_DELIM_FLAG : 0;
+}
+}
+function characterContainsDelimiter(code, delimiters) {
+return (getDelimFromCharacter(code) &#x26; delimiters) &#x3e; 0;
+}
+var ParsedCssResult = (function () {
+function ParsedCssResult(errors, ast) {
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.codelyzer.cssParser" id="apidoc.module.codelyzer.cssParser">module codelyzer.cssParser</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssParser.CssParseError" id="apidoc.element.codelyzer.cssParser.CssParseError">
+        function <span class="apidocSignatureSpan">codelyzer.cssParser.</span>CssParseError
+        <span class="apidocSignatureSpan">(span, message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssParseError(span, message) {
+    return _super.call(this, span, message) || this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssParser.CssParser" id="apidoc.element.codelyzer.cssParser.CssParser">
+        function <span class="apidocSignatureSpan">codelyzer.cssParser.</span>CssParser
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssParser() {
+    this._errors = [];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+
+&#x22;use strict&#x22;;
+var cssParser_1 = require(&#x22;./cssParser&#x22;);
+exports.parseCss = function (text) {
+    var parser = new cssParser_1.<span class="apidocCodeKeywordSpan">CssParser</span>();
+    return parser.parse(text, &#x27;&#x27;).ast;
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssParser.CssToken" id="apidoc.element.codelyzer.cssParser.CssToken">
+        function <span class="apidocSignatureSpan">codelyzer.cssParser.</span>CssToken
+        <span class="apidocSignatureSpan">(index, column, line, type, strValue)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CssToken(index, column, line, type, strValue) {
+    this.index = index;
+    this.column = column;
+    this.line = line;
+    this.type = type;
+    this.strValue = strValue;
+    this.numValue = charCode(strValue, 0);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var CssBlockDefinitionRuleAst = (function (_super) {
+    __extends(CssBlockDefinitionRuleAst, _super);
+    function CssBlockDefinitionRuleAst(location, strValue, type, query, block) {
+        var _this = _super.call(this, location, type, block) || this;
+        _this.strValue = strValue;
+        _this.query = query;
+        var firstCssToken = query.tokens[0];
+        _this.name = new cssLexer_1.<span class="apidocCodeKeywordSpan">CssToken</span>(firstCssToken.index, firstCssToken.column
+, firstCssToken.line, cssLexer_1.CssTokenType.Identifier, _this.strValue);
+        return _this;
+    }
+    CssBlockDefinitionRuleAst.prototype.visit = function (visitor, context) {
+        return visitor.visitCssBlock(this.block, context);
+    };
+    return CssBlockDefinitionRuleAst;
+}(CssBlockRuleAst));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.cssParser.ParsedCssResult" id="apidoc.element.codelyzer.cssParser.ParsedCssResult">
+        function <span class="apidocSignatureSpan">codelyzer.cssParser.</span>ParsedCssResult
+        <span class="apidocSignatureSpan">(errors, ast)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ParsedCssResult(errors, ast) {
+    this.errors = errors;
+    this.ast = ast;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.codelyzer.fileResolver" id="apidoc.module.codelyzer.fileResolver">module codelyzer.fileResolver</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.fileResolver.FileResolver" id="apidoc.element.codelyzer.fileResolver.FileResolver">
+        function <span class="apidocSignatureSpan">codelyzer.fileResolver.</span>FileResolver
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function FileResolver() {
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.codelyzer.fsFileResolver" id="apidoc.module.codelyzer.fsFileResolver">module codelyzer.fsFileResolver</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.fsFileResolver.FsFileResolver" id="apidoc.element.codelyzer.fsFileResolver.FsFileResolver">
+        function <span class="apidocSignatureSpan">codelyzer.fsFileResolver.</span>FsFileResolver
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function FsFileResolver() {
+    return _super.apply(this, arguments) || this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        return {
+            templateVisitorCtrl: basicTemplateAstVisitor_1.BasicTemplateAstVisitor,
+            expressionVisitorCtrl: recursiveAngularExpressionVisitor_1.RecursiveAngularExpressionVisitor,
+            cssVisitorCtrl: basicCssAstVisitor_1.BasicCssAstVisitor
+        };
+    },
+    defaultMetadataReader: function () {
+        return new metadataReader_1.MetadataReader(new fsFileResolver_1.<span class="apidocCodeKeywordSpan">FsFileResolver</span
+>(), new urlResolver_1.UrlResolver(new pathResolver_1.PathResolver()));
+    },
+    normalizeConfig: function (config) {
+        return Object.assign(this.defaultConfig(), config || {});
+    }
+};
+...</pre></li>
     </ul>
 
 
@@ -1238,7 +2008,24 @@ return exports.getDeclaredMethods(declaration)
     }
     return function (t) { return !preds.find(function (p) { return !p(t); }); };
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    &#x22;true&#x22;,
+    &#x22;[true, \&#x22;Component\&#x22;, \&#x22;View\&#x22;]&#x22;
+],
+optionsDescription: &#x22;Supply a list of allowed component suffixes. Defaults to \&#x22;Component\&#x22;.&#x22;,
+typescriptOnly: true,
+};
+Rule.FAILURE = &#x27;The name of the class %s should end with the suffix %s (https://goo.gl/5X1TE7)&#x27;;
+Rule.walkerBuilder = walkerFn_1.<span class="apidocCodeKeywordSpan">all</span>(walkerFn_1.validateComponent(function (meta, suffixList
+) {
+return function_1.Maybe.lift(meta.controller)
+    .fmap(function (controller) { return controller.name; })
+    .fmap(function (name) {
+    var className = name.text;
+    if (suffixList.length === 0) {
+        suffixList = [&#x27;Component&#x27;];
+    }
+...</pre></li>
     </ul>
 
 
@@ -1305,21 +2092,23 @@ MetadataReader.prototype.readComponentTemplateMetadata = function (dec, external
     return unWrapped.length !== 0 ? Maybe.lift(unWrapped) : Maybe.nothing;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-            .fmap(function (urls) { return urls.map(function (url) {
-            return _this._resolve(url).fmap(function (style) { return ({
-                style: normalizeTransformed(config_1.Config.transformStyle(style, url, dec)),
-                url: url,
-                node: null,
-            }); });
-        }); })
-            .bind(function (url_Ms) { return function_1.<span class="apidocCodeKeywordSpan">listToMaybe</span>(url_Ms); });
-    });
-};
-MetadataReader.prototype._resolve = function (url) {
-    try {
-        return function_1.Maybe.lift(this._fileResolver.resolve(url));
+        return parent.name.text;
     }
-    catch (e) {
+})
+    .bind(function (parentName) {
+    var failures = node.parameters.map(function (p) {
+        return function_1.Maybe.lift(p.decorators)
+            .bind(function (decorators) {
+            var decoratorsFailed = function_1.<span class="apidocCodeKeywordSpan">listToMaybe</span>(decorators.map(function (d) {
+return Rule.decoratorIsAttribute(d); }));
+            return decoratorsFailed.fmap(function () {
+                return new walkerFactory_1.Failure(p, sprintf_js_1.sprintf(Rule.FAILURE_STRING, parentName, p.name.text, p.name.
+text));
+            });
+        });
+    });
+    return function_1.listToMaybe(failures);
+});
 ...</pre></li>
     </ul>
 
@@ -1357,26 +2146,6 @@ dec) {
         return function_1.Maybe.lift(dec)
             .bind(astQuery_1.callExpression)
 ...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.codelyzer.importDestructuringSpacingRule" id="apidoc.module.codelyzer.importDestructuringSpacingRule">module codelyzer.importDestructuringSpacingRule</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.importDestructuringSpacingRule.Rule" id="apidoc.element.codelyzer.importDestructuringSpacingRule.Rule">
-        function <span class="apidocSignatureSpan">codelyzer.importDestructuringSpacingRule.</span>Rule
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function Rule() {
-    return _super.apply(this, arguments) || this;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
@@ -1471,543 +2240,238 @@ MetadataReader.prototype.readComponentMetadata = function (d, dec) {
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.codelyzer.metadataReader" id="apidoc.module.codelyzer.metadataReader">module codelyzer.metadataReader</a></h1>
+<h1><a href="#apidoc.module.codelyzer.parseCss" id="apidoc.module.codelyzer.parseCss">module codelyzer.parseCss</a></h1>
 
 
     <h2>
-        <a href="#apidoc.element.codelyzer.metadataReader.MetadataReader" id="apidoc.element.codelyzer.metadataReader.MetadataReader">
-        function <span class="apidocSignatureSpan">codelyzer.metadataReader.</span>MetadataReader
-        <span class="apidocSignatureSpan">(_fileResolver, _urlResolver)</span>
+        <a href="#apidoc.element.codelyzer.parseCss.parseCss" id="apidoc.element.codelyzer.parseCss.parseCss">
+        function <span class="apidocSignatureSpan">codelyzer.</span>parseCss
+        <span class="apidocSignatureSpan">(text)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function MetadataReader(_fileResolver, _urlResolver) {
+    <li>description and source-code<pre class="apidocCodePre">parseCss = function (text) {
+    var parser = new cssParser_1.CssParser();
+    return parser.parse(text, &#x27;&#x27;).ast;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        }
+    }
+    var styles = metadata.styles;
+    if (styles &#x26;&#x26; styles.length) {
+        for (var i = 0; i &#x3c; styles.length; i += 1) {
+            var style = styles[i];
+            try {
+                this.visitNgStyleHelper(parseCss_1.<span class="apidocCodeKeywordSpan">parseCss</span>(style.style.code), metadata
+, style, getPosition(style.node));
+            }
+            catch (e) {
+                logger_1.logger.error(&#x27;Cannot parse the styles of&#x27;, ((metadata.controller || {}).name || {}).text, e);
+            }
+        }
+    }
+};
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.codelyzer.parseUtil" id="apidoc.module.codelyzer.parseUtil">module codelyzer.parseUtil</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.parseUtil.ParseError" id="apidoc.element.codelyzer.parseUtil.ParseError">
+        function <span class="apidocSignatureSpan">codelyzer.parseUtil.</span>ParseError
+        <span class="apidocSignatureSpan">(span, msg, level)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ParseError(span, msg, level) {
+    if (level === void 0) { level = ParseErrorLevel.FATAL; }
+    this.span = span;
+    this.msg = msg;
+    this.level = level;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.parseUtil.ParseLocation" id="apidoc.element.codelyzer.parseUtil.ParseLocation">
+        function <span class="apidocSignatureSpan">codelyzer.parseUtil.</span>ParseLocation
+        <span class="apidocSignatureSpan">(file, offset, line, col)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ParseLocation(file, offset, line, col) {
+    this.file = file;
+    this.offset = offset;
+    this.line = line;
+    this.col = col;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    startLoc = start.location.start;
+}
+else {
+    var token = start;
+    if (!token) {
+        token = this._lastToken;
+    }
+    startLoc = new parseUtil_1.<span class="apidocCodeKeywordSpan">ParseLocation</span>(this._file, token.index, token.line, token
+.column);
+}
+if (!end) {
+    end = this._lastToken;
+}
+var endLine;
+var endColumn;
+var endIndex;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.parseUtil.ParseSourceFile" id="apidoc.element.codelyzer.parseUtil.ParseSourceFile">
+        function <span class="apidocSignatureSpan">codelyzer.parseUtil.</span>ParseSourceFile
+        <span class="apidocSignatureSpan">(content, url)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ParseSourceFile(content, url) {
+    this.content = content;
+    this.url = url;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+exports.ParsedCssResult = ParsedCssResult;
+var CssParser = (function () {
+function CssParser() {
+    this._errors = [];
+}
+CssParser.prototype.parse = function (css, url) {
+    var lexer = new cssLexer_1.CssLexer();
+    this._file = new parseUtil_1.<span class="apidocCodeKeywordSpan">ParseSourceFile</span>(css, url);
+    this._scanner = lexer.scan(css, false);
+    var ast = this._parseStyleSheet(EOF_DELIM_FLAG);
+    var errors = this._errors;
+    this._errors = [];
+    var result = new ParsedCssResult(errors, ast);
+    this._file = null;
+    this._scanner = null;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.parseUtil.ParseSourceSpan" id="apidoc.element.codelyzer.parseUtil.ParseSourceSpan">
+        function <span class="apidocSignatureSpan">codelyzer.parseUtil.</span>ParseSourceSpan
+        <span class="apidocSignatureSpan">(start, end, details)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ParseSourceSpan(start, end, details) {
+    if (details === void 0) { details = null; }
+    this.start = start;
+    this.end = end;
+    this.details = details;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    }
+    else if (end instanceof cssLexer_1.CssToken) {
+        endLine = end.line;
+        endColumn = end.column;
+        endIndex = end.index;
+    }
+    var endLoc = new parseUtil_1.ParseLocation(this._file, endIndex, endLine, endColumn);
+    return new parseUtil_1.<span class="apidocCodeKeywordSpan">ParseSourceSpan</span>(startLoc, endLoc);
+};
+CssParser.prototype._resolveBlockType = function (token) {
+    switch (token.strValue) {
+        case &#x27;@-o-keyframes&#x27;:
+        case &#x27;@-moz-keyframes&#x27;:
+        case &#x27;@-webkit-keyframes&#x27;:
+        case &#x27;@keyframes&#x27;:
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.codelyzer.pathResolver" id="apidoc.module.codelyzer.pathResolver">module codelyzer.pathResolver</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.codelyzer.pathResolver.PathResolver" id="apidoc.element.codelyzer.pathResolver.PathResolver">
+        function <span class="apidocSignatureSpan">codelyzer.pathResolver.</span>PathResolver
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function PathResolver() {
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+return t;
+};
+var MetadataReader = (function () {
+function MetadataReader(_fileResolver, _urlResolver) {
     this._fileResolver = _fileResolver;
     this._urlResolver = _urlResolver;
-    this._urlResolver = this._urlResolver || new urlResolver_1.UrlResolver(new pathResolver_1.PathResolver());
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.codelyzer.ngQuery" id="apidoc.module.codelyzer.ngQuery">module codelyzer.ngQuery</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.ngQuery.getInlineStyle" id="apidoc.element.codelyzer.ngQuery.getInlineStyle">
-        function <span class="apidocSignatureSpan">codelyzer.ngQuery.</span>getInlineStyle
-        <span class="apidocSignatureSpan">(dec)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function getInlineStyle(dec) {
-    return astQuery_1.decoratorArgument(dec)
-        .bind(function (expr) {
-        var property = expr.properties.find(function (p) { return astQuery_1.isProperty(&#x27;styles&#x27;, p); });
-        return astQuery_1.getInitializer(property)
-            .fmap(function (expr) {
-            return astQuery_1.isArrayLiteralExpression(expr) ? expr : undefined;
-        });
-    });
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-                node: null
-            }); });
-        });
-    });
-};
-MetadataReader.prototype.readComponentStylesMetadata = function (dec, external) {
+    this._urlResolver = this._urlResolver || new urlResolver_1.UrlResolver(new pathResolver_1.<span class="apidocCodeKeywordSpan
+">PathResolver</span>());
+}
+MetadataReader.prototype.read = function (d) {
     var _this = this;
-    return ngQuery_1.<span class="apidocCodeKeywordSpan">getInlineStyle</span>(dec).fmap(function (inlineStyles) {
-        return inlineStyles.elements.map(function (inlineStyle) {
-            if (astQuery_1.isSimpleTemplateString(inlineStyle)) {
-                return {
-                    style: normalizeTransformed(config_1.Config.transformStyle(inlineStyle.text, null, dec)),
-                    url: null,
-                    node: inlineStyle,
-                };
+    var componentMetadata = function_1.unwrapFirst((d.decorators || []).map(function (dec) {
+        return function_1.Maybe.lift(dec).bind(astQuery_1.callExpression)
+            .bind(astQuery_1.withIdentifier(&#x27;Component&#x27;))
+            .fmap(function () { return _this.readComponentMetadata(d, dec); });
 ...</pre></li>
     </ul>
 
 
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.codelyzer.referenceCollectorVisitor" id="apidoc.module.codelyzer.referenceCollectorVisitor">module codelyzer.referenceCollectorVisitor</a></h1>
+
 
     <h2>
-        <a href="#apidoc.element.codelyzer.ngQuery.getTemplate" id="apidoc.element.codelyzer.ngQuery.getTemplate">
-        function <span class="apidocSignatureSpan">codelyzer.ngQuery.</span>getTemplate
-        <span class="apidocSignatureSpan">(dec)</span>
+        <a href="#apidoc.element.codelyzer.referenceCollectorVisitor.ReferenceCollectorVisitor" id="apidoc.element.codelyzer.referenceCollectorVisitor.ReferenceCollectorVisitor">
+        function <span class="apidocSignatureSpan">codelyzer.referenceCollectorVisitor.</span>ReferenceCollectorVisitor
+        <span class="apidocSignatureSpan">()</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function getTemplate(dec) {
-    return astQuery_1.decoratorArgument(dec)
-        .bind(function (expr) {
-        return astQuery_1.getStringInitializerFromProperty(&#x27;template&#x27;, expr.properties);
-    });
+    <li>description and source-code<pre class="apidocCodePre">function ReferenceCollectorVisitor() {
+    this._variables = {};
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-};
-MetadataReader.prototype.getDecoratorArgument = function (decorator) {
-    return astQuery_1.decoratorArgument(decorator)
-        .bind(function_1.ifTrue(astQuery_1.hasProperties));
-};
-MetadataReader.prototype.readComponentTemplateMetadata = function (dec, external) {
+NgWalker.prototype.visitNgTemplateHelper = function (roots, context, baseStart) {
     var _this = this;
-    return ngQuery_1.<span class="apidocCodeKeywordSpan">getTemplate</span>(dec)
-        .fmap(function (inlineTemplate) { return ({
-        template: normalizeTransformed(config_1.Config.transformTemplate(inlineTemplate.text, null, dec)),
-        url: null,
-        node: inlineTemplate,
-    }); }).catch(function () {
-        return function_1.Maybe.lift(external.templateUrl)
-            .bind(function (url) {
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.ngQuery.getTemplateUrl" id="apidoc.element.codelyzer.ngQuery.getTemplateUrl">
-        function <span class="apidocSignatureSpan">codelyzer.ngQuery.</span>getTemplateUrl
-        <span class="apidocSignatureSpan">(dec)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function getTemplateUrl(dec) {
-    return astQuery_1.decoratorArgument(dec)
-        .bind(function (expr) {
-        return astQuery_1.getStringInitializerFromProperty(&#x27;templateUrl&#x27;, expr.properties);
-    });
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.codelyzer.noForwardRefRule" id="apidoc.module.codelyzer.noForwardRefRule">module codelyzer.noForwardRefRule</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.noForwardRefRule.ExpressionCallMetadataWalker" id="apidoc.element.codelyzer.noForwardRefRule.ExpressionCallMetadataWalker">
-        function <span class="apidocSignatureSpan">codelyzer.noForwardRefRule.</span>ExpressionCallMetadataWalker
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function ExpressionCallMetadataWalker() {
-    return _super.apply(this, arguments) || this;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.noForwardRefRule.Rule" id="apidoc.element.codelyzer.noForwardRefRule.Rule">
-        function <span class="apidocSignatureSpan">codelyzer.noForwardRefRule.</span>Rule
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function Rule() {
-    return _super.apply(this, arguments) || this;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.codelyzer.propertyDecoratorBase" id="apidoc.module.codelyzer.propertyDecoratorBase">module codelyzer.propertyDecoratorBase</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.propertyDecoratorBase.UsePropertyDecorator" id="apidoc.element.codelyzer.propertyDecoratorBase.UsePropertyDecorator">
-        function <span class="apidocSignatureSpan">codelyzer.propertyDecoratorBase.</span>UsePropertyDecorator
-        <span class="apidocSignatureSpan">(config, ruleName, value, disabledIntervals)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function UsePropertyDecorator(config, ruleName, value, disabledIntervals) {
-    var _this = _super.call(this, ruleName, value, disabledIntervals) || this;
-    _this.config = config;
-    return _this;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.codelyzer.sourceMappingVisitor" id="apidoc.module.codelyzer.sourceMappingVisitor">module codelyzer.sourceMappingVisitor</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.sourceMappingVisitor.SourceMappingVisitor" id="apidoc.element.codelyzer.sourceMappingVisitor.SourceMappingVisitor">
-        function <span class="apidocSignatureSpan">codelyzer.sourceMappingVisitor.</span>SourceMappingVisitor
-        <span class="apidocSignatureSpan">(sourceFile, options, codeWithMap, basePosition)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function SourceMappingVisitor(sourceFile, options, codeWithMap, basePosition) {
-    var _this = _super.call(this, sourceFile, options) || this;
-    _this.codeWithMap = codeWithMap;
-    _this.basePosition = basePosition;
-    if (_this.codeWithMap.map) {
-        _this.consumer = new source_map_1.SourceMapConsumer(_this.codeWithMap.map);
-    }
-    return _this;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.sourceMappingVisitor.isLineBreak" id="apidoc.element.codelyzer.sourceMappingVisitor.isLineBreak">
-        function <span class="apidocSignatureSpan">codelyzer.sourceMappingVisitor.</span>isLineBreak
-        <span class="apidocSignatureSpan">(ch)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function isLineBreak(ch) {
-    return ch === LineFeed ||
-        ch === CarriageReturn ||
-        ch === LineSeparator ||
-        ch === ParagraphSeparator;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.codelyzer.syntaxKind" id="apidoc.module.codelyzer.syntaxKind">module codelyzer.syntaxKind</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.syntaxKind.current" id="apidoc.element.codelyzer.syntaxKind.current">
-        function <span class="apidocSignatureSpan">codelyzer.syntaxKind.</span>current
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function current() {
-    return ts.SyntaxKind;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-    ExpressionCallMetadataWalker.prototype.validateCallExpression = function (callExpression) {
-if (callExpression.expression.text === &#x27;forwardRef&#x27;) {
-    var currentNode = callExpression;
-    while (currentNode.parent.parent) {
-        currentNode = currentNode.parent;
-    }
-    var failureConfig = [];
-    if (currentNode.kind === SyntaxKind.<span class="apidocCodeKeywordSpan">current</span>().VariableStatement) {
-        failureConfig = [Rule.FAILURE_IN_VARIABLE, currentNode.declarationList.declarations[0].name.text];
+    if (!roots || !roots.length) {
+        return;
     }
     else {
-        failureConfig = [Rule.FAILURE_IN_CLASS, currentNode.name.text];
+        var sourceFile = this.getContextSourceFile(context.template.url, context.template.template.source);
+        var referenceVisitor = new referenceCollectorVisitor_1.<span class="apidocCodeKeywordSpan">ReferenceCollectorVisitor</span
+>();
+        var visitor = new this._config.templateVisitorCtrl(sourceFile, this._originalOptions, context, baseStart, this._config.expressionVisitorCtrl
+);
+        compiler.templateVisitAll(referenceVisitor, roots, null);
+        visitor._variables = referenceVisitor.variables;
+        compiler.templateVisitAll(visitor, roots, context.controller);
+        visitor.getFailures().forEach(function (f) { return _this.addFailure(f); });
     }
-    this.addFailure(this.createFailure(callExpression.getStart(), callExpression.getWidth(), sprintf_js_1.sprintf.apply(this, failureConfig
-)));
-}
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.codelyzer.useHostPropertyDecoratorRule" id="apidoc.module.codelyzer.useHostPropertyDecoratorRule">module codelyzer.useHostPropertyDecoratorRule</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.useHostPropertyDecoratorRule.Rule" id="apidoc.element.codelyzer.useHostPropertyDecoratorRule.Rule">
-        function <span class="apidocSignatureSpan">codelyzer.useHostPropertyDecoratorRule.</span>Rule
-        <span class="apidocSignatureSpan">(ruleName, value, disabledIntervals)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function Rule(ruleName, value, disabledIntervals) {
-    return _super.call(this, {
-        decoratorName: [&#x27;HostBindings&#x27;, &#x27;HostListeners&#x27;],
-        propertyName: &#x27;host&#x27;,
-        errorMessage: &#x27;Use @HostBindings and @HostListeners instead of the host property (https://goo.gl/zrdmKr)&#x27;
-    }, ruleName, value, disabledIntervals) || this;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.codelyzer.useInputPropertyDecoratorRule" id="apidoc.module.codelyzer.useInputPropertyDecoratorRule">module codelyzer.useInputPropertyDecoratorRule</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.useInputPropertyDecoratorRule.Rule" id="apidoc.element.codelyzer.useInputPropertyDecoratorRule.Rule">
-        function <span class="apidocSignatureSpan">codelyzer.useInputPropertyDecoratorRule.</span>Rule
-        <span class="apidocSignatureSpan">(ruleName, value, disabledIntervals)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function Rule(ruleName, value, disabledIntervals) {
-    return _super.call(this, {
-        decoratorName: &#x27;Input&#x27;,
-        propertyName: &#x27;inputs&#x27;,
-        errorMessage: &#x27;Use the @Input property decorator instead of the inputs property (https://goo.gl/U0lrdN)&#x27;
-    }, ruleName, value, disabledIntervals) || this;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.codelyzer.useLifeCycleInterfaceRule" id="apidoc.module.codelyzer.useLifeCycleInterfaceRule">module codelyzer.useLifeCycleInterfaceRule</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.useLifeCycleInterfaceRule.ClassMetadataWalker" id="apidoc.element.codelyzer.useLifeCycleInterfaceRule.ClassMetadataWalker">
-        function <span class="apidocSignatureSpan">codelyzer.useLifeCycleInterfaceRule.</span>ClassMetadataWalker
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function ClassMetadataWalker() {
-    return _super.apply(this, arguments) || this;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.useLifeCycleInterfaceRule.Rule" id="apidoc.element.codelyzer.useLifeCycleInterfaceRule.Rule">
-        function <span class="apidocSignatureSpan">codelyzer.useLifeCycleInterfaceRule.</span>Rule
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function Rule() {
-    return _super.apply(this, arguments) || this;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.codelyzer.useOutputPropertyDecoratorRule" id="apidoc.module.codelyzer.useOutputPropertyDecoratorRule">module codelyzer.useOutputPropertyDecoratorRule</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.useOutputPropertyDecoratorRule.Rule" id="apidoc.element.codelyzer.useOutputPropertyDecoratorRule.Rule">
-        function <span class="apidocSignatureSpan">codelyzer.useOutputPropertyDecoratorRule.</span>Rule
-        <span class="apidocSignatureSpan">(ruleName, value, disabledIntervals)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function Rule(ruleName, value, disabledIntervals) {
-    return _super.call(this, {
-        decoratorName: &#x27;Output&#x27;,
-        propertyName: &#x27;outputs&#x27;,
-        errorMessage: &#x27;Use the @Output property decorator instead of the outputs property (https://goo.gl/U0lrdN)&#x27;
-    }, ruleName, value, disabledIntervals) || this;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.codelyzer.usePipeTransformInterfaceRule" id="apidoc.module.codelyzer.usePipeTransformInterfaceRule">module codelyzer.usePipeTransformInterfaceRule</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.usePipeTransformInterfaceRule.ClassMetadataWalker" id="apidoc.element.codelyzer.usePipeTransformInterfaceRule.ClassMetadataWalker">
-        function <span class="apidocSignatureSpan">codelyzer.usePipeTransformInterfaceRule.</span>ClassMetadataWalker
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function ClassMetadataWalker() {
-    return _super.apply(this, arguments) || this;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.usePipeTransformInterfaceRule.Rule" id="apidoc.element.codelyzer.usePipeTransformInterfaceRule.Rule">
-        function <span class="apidocSignatureSpan">codelyzer.usePipeTransformInterfaceRule.</span>Rule
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function Rule() {
-    return _super.apply(this, arguments) || this;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.codelyzer.utils" id="apidoc.module.codelyzer.utils">module codelyzer.utils</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.utils.getComponentDecorator" id="apidoc.element.codelyzer.utils.getComponentDecorator">
-        function <span class="apidocSignatureSpan">codelyzer.utils.</span>getComponentDecorator
-        <span class="apidocSignatureSpan">(declaration)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">getComponentDecorator = function (declaration) {
-    return (declaration.decorators || [])
-        .filter(function (d) {
-        if (!d.expression.arguments ||
-            !d.expression.arguments.length ||
-            !d.expression.arguments[0].properties) {
-            return false;
-        }
-        var name = exports.getDecoratorName(d);
-        if (name === &#x27;Component&#x27;) {
-            return true;
-        }
-    }).pop();
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.utils.getDecoratorName" id="apidoc.element.codelyzer.utils.getDecoratorName">
-        function <span class="apidocSignatureSpan">codelyzer.utils.</span>getDecoratorName
-        <span class="apidocSignatureSpan">(decorator)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">getDecoratorName = function (decorator) {
-    var baseExpr = decorator.expression || {};
-    var expr = baseExpr.expression || {};
-    return expr.text;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-    return (declaration.decorators || [])
-        .filter(function (d) {
-        if (!d.expression.arguments ||
-            !d.expression.arguments.length ||
-            !d.expression.arguments[0].properties) {
-            return false;
-        }
-        var name = exports.<span class="apidocCodeKeywordSpan">getDecoratorName</span>(d);
-        if (name === &#x27;Component&#x27;) {
-            return true;
-        }
-    }).pop();
 };
 ...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.utils.getDecoratorPropertyInitializer" id="apidoc.element.codelyzer.utils.getDecoratorPropertyInitializer">
-        function <span class="apidocSignatureSpan">codelyzer.utils.</span>getDecoratorPropertyInitializer
-        <span class="apidocSignatureSpan">(decorator, name)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">getDecoratorPropertyInitializer = function (decorator, name) {
-    return decorator.expression.arguments[0]
-        .properties.map(function (prop) {
-        if (prop.name.text === name) {
-            return prop;
-        }
-        return null;
-    }).filter(function (el) { return !!el; }).map(function (prop) { return prop.initializer; }).pop();
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.utils.isSimpleTemplateString" id="apidoc.element.codelyzer.utils.isSimpleTemplateString">
-        function <span class="apidocSignatureSpan">codelyzer.utils.</span>isSimpleTemplateString
-        <span class="apidocSignatureSpan">(e)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">isSimpleTemplateString = function (e) {
-    return e.kind === ts.SyntaxKind.StringLiteral ||
-        e.kind === SyntaxKind.current().FirstTemplateToken;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-        });
-    });
-};
-MetadataReader.prototype.readComponentStylesMetadata = function (dec, external) {
-    var _this = this;
-    return ngQuery_1.getInlineStyle(dec).fmap(function (inlineStyles) {
-        return inlineStyles.elements.map(function (inlineStyle) {
-            if (astQuery_1.<span class="apidocCodeKeywordSpan">isSimpleTemplateString</span>(inlineStyle)) {
-                return {
-                    style: normalizeTransformed(config_1.Config.transformStyle(inlineStyle.text, null, dec)),
-                    url: null,
-                    node: inlineStyle,
-                };
-            }
-        }).filter(function (v) { return !!v; });
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.codelyzer.utils.stringDistance" id="apidoc.element.codelyzer.utils.stringDistance">
-        function <span class="apidocSignatureSpan">codelyzer.utils.</span>stringDistance
-        <span class="apidocSignatureSpan">(s, t, ls, lt)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">stringDistance = function (s, t, ls, lt) {
-    if (ls === void 0) { ls = s.length; }
-    if (lt === void 0) { lt = t.length; }
-    var memo = [];
-    var currRowMemo;
-    var i;
-    var k;
-    for (k = 0; k &#x3c;= lt; k += 1) {
-        memo[k] = k;
-    }
-    for (i = 1; i &#x3c;= ls; i += 1) {
-        currRowMemo = [i];
-        for (k = 1; k &#x3c;= lt; k += 1) {
-            currRowMemo[k] = Math.min(currRowMemo[k - 1] + 1, memo[k] + 1, memo[k - 1] + (s[i - 1] !== t[k - 1] ? 1 : 0));
-        }
-        memo = currRowMemo;
-    }
-    return memo[lt];
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
