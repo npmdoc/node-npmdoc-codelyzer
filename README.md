@@ -1,6 +1,6 @@
 # npmdoc-codelyzer
 
-#### api documentation for  [codelyzer (v2.1.1)](https://github.com/mgechev/codelyzer#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-codelyzer.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-codelyzer) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-codelyzer.svg)](https://travis-ci.org/npmdoc/node-npmdoc-codelyzer)
+#### basic api documentation for  [codelyzer (v3.0.0)](https://github.com/mgechev/codelyzer#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-codelyzer.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-codelyzer) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-codelyzer.svg)](https://travis-ci.org/npmdoc/node-npmdoc-codelyzer)
 
 #### Linting for Angular applications, following angular.io/styleguide.
 
@@ -47,8 +47,8 @@
     "devDependencies": {},
     "directories": {},
     "dist": {
-        "shasum": "0573c7f8da4ac2a4473b0042807f7b901dec8b0a",
-        "tarball": "https://registry.npmjs.org/codelyzer/-/codelyzer-2.1.1.tgz"
+        "shasum": "b33eb4886271b5d8209a0dfa4a20fc27eefa4029",
+        "tarball": "https://registry.npmjs.org/codelyzer/-/codelyzer-3.0.0.tgz"
     },
     "homepage": "https://github.com/mgechev/codelyzer#readme",
     "keywords": [
@@ -70,7 +70,7 @@
     "name": "codelyzer",
     "optionalDependencies": {},
     "peerDependencies": {
-        "tslint": "^4.0.0",
+        "tslint": "^5.0.0",
         "@angular/compiler": "^2.3.1 || >=4.0.0-beta <5.0.0",
         "@angular/core": "^2.3.1 || >=4.0.0-beta <5.0.0"
     },
@@ -79,7 +79,8 @@
         "url": "git+https://github.com/mgechev/codelyzer.git"
     },
     "scripts": {},
-    "version": "2.1.1"
+    "version": "3.0.0",
+    "bin": {}
 }
 ```
 
